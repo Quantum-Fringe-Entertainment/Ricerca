@@ -1,11 +1,11 @@
 # Ricerca
 The story of a father's pursuit for his lost child.
 
-**Story : **
+#### Story :
 To be Updated....
 
 
-**Core Mechanics : **
+#### Core Mechanics : 
 - Climbing up gill while dodging mini Avalanches
 - Going through narrow passages
 - And walking left/right on ledges on the mountain
