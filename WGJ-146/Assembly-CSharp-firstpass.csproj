@@ -1,0 +1,831 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{ADEFBD1A-3EB0-0687-A76E-13647BE18E25}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_3_10;UNITY_2019_3;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_OSX;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_VSTU;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Unity/VSTU</UnityProjectGenerator>
+    <UnityProjectType>GamePlugins:3</UnityProjectType>
+    <UnityBuildTarget>StandaloneOSX:2</UnityBuildTarget>
+    <UnityVersion>2019.3.10f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="/Volumes/Mac/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\RootMotion\Baker\Scripts\Baker.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Baker\Scripts\GenericBaker.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Baker\Scripts\Helpers\AvatarUtility.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Baker\Scripts\Helpers\BakerUtilities.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Baker\Scripts\HumanoidBaker.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Baker\_DEMOS\Scripts\FKOffset.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\BipedIK\BipedIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\BipedIK\BipedIKSolvers.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\Constraint.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\ConstraintPosition.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\ConstraintPositionOffset.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\ConstraintRotation.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\ConstraintRotationOffset.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Constraints\Constraints.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\DoxygenManualFinalIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Finger Rig\FingerRig.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\Grounder.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GrounderBipedIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GrounderFBBIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GrounderIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GrounderQuadruped.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GrounderVRIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\Grounding.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GroundingLeg.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Grounder\GroundingPelvis.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\AimIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\ArmIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\CCDIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\FABRIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\FABRIKRoot.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\FullBodyBipedIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\IK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\IKExecutionOrder.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\LegIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\LimbIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\LookAtIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\TrigonometricIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Components\VRIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\FABRIKChain.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\FBBIKArmBending.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\FBBIKHeadEffector.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\FBIKChain.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKConstraintBend.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKEffector.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKMapping.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKMappingBone.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKMappingLimb.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKMappingSpine.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolver.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverAim.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverArm.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverCCD.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverFABRIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverFABRIKRoot.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverFullBody.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverFullBodyBiped.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverHeuristic.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverLeg.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverLimb.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverLookAt.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverTrigonometric.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverVR.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverVRArm.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverVRBodyPart.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverVRFootstep.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverVRLeg.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverVRLocomotion.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverVRSpine.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\IKSolverVRUtilities.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\IK Solvers\TwistRelaxer.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionEffector.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionLookAt.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionObject.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionSystem.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionTarget.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\InteractionSystem\InteractionTrigger.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Posers\GenericPoser.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Posers\HandPoser.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Posers\Poser.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Ragdoll Utility\RagdollUtility.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Rotation Limits\RotationLimit.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Rotation Limits\RotationLimitAngle.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Rotation Limits\RotationLimitHinge.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Rotation Limits\RotationLimitPolygonal.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Rotation Limits\RotationLimitSpline.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\AimController.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\AimPoser.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\Amplifier.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\BodyTilt.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\EditorIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\HitReaction.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\HitReactionVRIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\Inertia.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\LookAtController.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\OffsetModifier.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\OffsetModifierVRIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\OffsetPose.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\PenetrationAvoidance.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\Recoil.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\ShoulderRotator.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\VRIKCalibrator.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\VRIKLODController.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\Tools\VRIKRootController.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\AimBoxing.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\AimSwing.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\SecondHandOnGun.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\SimpleAimingSystem.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Aim IK\Scripts\TerrainOffset.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Biped IK\Scripts\BipedIKvsAnimatorIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpider.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpiderController.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpiderLeg.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\CCD IK\Scripts\MechSpiderParticles.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\AnimationWarping.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\AnimatorController3rdPerson.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\AnimatorController3rdPersonIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\CharacterAnimationThirdPersonIK.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\CharacterController3rdPerson.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\EffectorOffset.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\ExplosionDemo.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBBIKSettings.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBIKBendGoal.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBIKBoxing.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FBIKHandsOnProp.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FPSAiming.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\FPSCharacter.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\HitReactionTrigger.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\HoldingHands.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\InteractionC2CDemo.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\InteractionDemo.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\InteractionSystemTestGUI.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\KissingRig.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\MotionAbsorb.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\MotionAbsorbCharacter.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\OffsetEffector.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\PendulumExample.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\PickUp2Handed.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\PickUpBox.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\PickUpSphere.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\RagdollUtilityDemo.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\RecoilTest.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\ResetInteractionObject.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\SoccerDemo.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\TouchWalls.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\TransferMotion.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\TwoHandedProp.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\FBBIK\Scripts\UserControlInteractions.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Grounder\Scripts\GrounderDemo.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Grounder\Scripts\PlatformRotator.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Limb IK\Scripts\BendGoal.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\Rotation Limits\Scripts\Turret.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\VRIK\Scripts\HitReactionVRIKTrigger.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\VRIK\Scripts\VRIKCalibrationController.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\VRIK\Scripts\VRIKPlatform.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\FinalIK\_DEMOS\VRIK\Scripts\VRIKPlatformController.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Camera Controllers\CameraController.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Camera Controllers\CameraControllerFPS.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Character Controllers\CharacterAnimationBase.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Character Controllers\CharacterAnimationSimple.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Character Controllers\CharacterAnimationThirdPerson.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Character Controllers\CharacterBase.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Character Controllers\CharacterThirdPerson.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Character Controllers\SimpleLocomotion.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Character Controllers\UserControlAI.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Character Controllers\UserControlThirdPerson.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Misc\ApplicationQuit.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Demo Assets\Scripts\Misc\SlowMo.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\AxisTools.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\BipedLimbOrientations.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\BipedNaming.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\BipedReferences.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\Comments.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\DemoGUIMessage.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\Hierarchy.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\InspectorComment.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\Interp.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\LargeHeader.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\LayerMaskExtensions.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\Navigator.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\QuaTools.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\Singleton.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\SolverManager.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\TriggerEventBroadcaster.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\V3Tools.cs" />
+    <Compile Include="Assets\Plugins\RootMotion\Shared Scripts\Warning.cs" />
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>/Volumes/dev2/Game_Dev/Ricerca/WGJ-146/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Rtc">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Http.Rtc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Duplex">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Duplex.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Http">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.NetTcp">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.NetTcp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Primitives">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Security">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ServiceModel.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/UnityScript.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityScript.Lang">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/UnityScript.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang">
+      <HintPath>/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
