@@ -4879,7 +4879,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282840810}
-  m_LocalRotation: {x: 0.021722566, y: 0.000000035771617, z: -7.7723483e-10, w: 0.999764}
+  m_LocalRotation: {x: 0.021722563, y: 0.00000003442223, z: -7.479155e-10, w: 0.999764}
   m_LocalPosition: {x: -7.33, y: 30.5, z: 142.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -16389,7 +16389,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963163623}
-  m_LocalRotation: {x: 0.021722566, y: 0.000000019158392, z: 0.000000028877388, w: 0.999764}
+  m_LocalRotation: {x: 0.021722563, y: 0.000000016600678, z: 0.000000028933004, w: 0.9997641}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -18756,6 +18756,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookSpeed: 2
   moveSpeed: 5
+  jumpSpeed: 1
+  gravityRelaxation: 0.4
   cam: {fileID: 282840813}
 --- !u!95 &1121772727
 Animator:
@@ -19075,7 +19077,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1130599991}
-  m_LocalRotation: {x: -0.21618618, y: 0.000000024841137, z: 0.000000112188914, w: 0.97635216}
+  m_LocalRotation: {x: -0.21618618, y: 0.00000002484115, z: 0.000000112188964, w: 0.97635216}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -25060,7 +25062,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492693803}
-  m_LocalRotation: {x: 0.15423319, y: -0.000000002805185, z: 0.000000008804169, w: 0.9880345}
+  m_LocalRotation: {x: 0.15423322, y: -0.0000000013386041, z: 0.000000008575239, w: 0.9880345}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -28701,7 +28703,7 @@ MonoBehaviour:
     m_VelocityFilterStrength: 4
     m_Bias: 0
   m_RecenterToTargetHeading:
-    m_enabled: 1
+    m_enabled: 0
     m_WaitTime: 1
     m_RecenteringTime: 2
     m_LegacyHeadingDefinition: -1
