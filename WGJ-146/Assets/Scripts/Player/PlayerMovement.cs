@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]private Animator _playerAnim;
     public Camera cam;
 
+   
+
     [Header("Slope Settings")]
     [SerializeField]
     private float _RayLength;
@@ -27,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+         float z = Input.GetAxis("Vertical");
 
         Vector3 moveDir = cam.transform.right * x + cam.transform.forward * z; 
         if(moveDir != Vector3.zero)
@@ -58,6 +60,8 @@ public class PlayerMovement : MonoBehaviour
         if (x > 0 || x < 0 || z > 0 || z < 0 && OnSlope())
         {
             _charController.Move(Vector3.down * _charController.height / 2 * _SlopeForce * Time.deltaTime);
+
+            _charController.Move(transform.forward * _charController.height / 2 * _SlopeForce * Time.deltaTime);
             
         }
     }//Update
@@ -83,6 +87,9 @@ public class PlayerMovement : MonoBehaviour
         if (other.CompareTag("Entry"))
         {
             _playerAnim.SetTrigger("SlopeStarts");
+            // z = 1;
+            
+
         }
 
         if (other.CompareTag("Exit"))
