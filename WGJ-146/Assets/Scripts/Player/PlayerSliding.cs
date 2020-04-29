@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class PlayerSliding : MonoBehaviour
 {
-    public float lookSpeed = 1.5f;
-    public float moveSpeed = 5f;
+   // public float lookSpeed = 1.5f;
+   // public float moveSpeed = 5f;
     [HideInInspector] private CharacterController _charController;
     [HideInInspector] private Animator _playerAnim;
-    public Camera cam;
+   // public Camera cam;
 
 
 
@@ -22,53 +22,59 @@ public class PlayerSliding : MonoBehaviour
     {
         _charController = GetComponent<CharacterController>();
         _playerAnim = GetComponent<Animator>();
-        Cursor.visible = false;
+       // Cursor.visible = false;
     }//Start
 
     private void Update()
     {
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+       // float x = Input.GetAxis("Horizontal");
+       // float z = Input.GetAxis("Vertical");
 
-        Vector3 moveDir = cam.transform.right * x + cam.transform.forward * z;
-        if (moveDir != Vector3.zero)
-        {
+       
+
+      //  Vector3 moveDir = cam.transform.right * x + cam.transform.forward * z;
+       // if (moveDir != Vector3.zero)
+       // {
             //Player Rotation
-            Quaternion rotDir = Quaternion.LookRotation(moveDir);
-            transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x,// X
-                Quaternion.Slerp(transform.rotation, rotDir, Time.deltaTime * lookSpeed).eulerAngles.y, // Y
-                transform.rotation.eulerAngles.z)); // Z
+         //   Quaternion rotDir = Quaternion.LookRotation(moveDir);
+          //  transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.eulerAngles.x,// X
+           //     Quaternion.Slerp(transform.rotation, rotDir, Time.deltaTime * lookSpeed).eulerAngles.y, // Y
+            //    transform.rotation.eulerAngles.z)); // Z
 
             //Player Movement
-            _charController.Move(transform.forward * moveSpeed * Time.deltaTime);
+           // _charController.Move(transform.forward * moveSpeed * Time.deltaTime);
 
 
 
-        }
+        
 
 
-        if (x > 0 || x < 0 || z > 0 || z < 0)
-        {
-            _playerAnim.SetBool("isWalking", true);
-        }
-        else
-        {
-            _playerAnim.SetBool("isWalking", false);
-        }
+       // if (x > 0 || x < 0 || z > 0 || z < 0)
+       // {
+       //     _playerAnim.SetBool("isWalking", true);
+       // }
+       // else
+       // {
+       //     _playerAnim.SetBool("isWalking", false);
+       // }
 
-        if (x > 0 || x < 0 || z > 0 || z < 0 && OnSlope())
+        if (OnSlope())
         {
             _charController.Move(Vector3.down * _charController.height / 2 * _SlopeForce * Time.deltaTime);
 
-            transform.position += transform.forward * _charController.height / 2 * _SlopeForce * Time.deltaTime;
+            //transform.position += transform.forward * _charController.height / 2 * _SlopeForce * Time.deltaTime;
 
-           // _charController.Move(transform.forward * _charController.height / 2 * _SlopeForce * Time.deltaTime);
+            _charController.Move(transform.forward * _charController.height / 2 * _SlopeForce * Time.deltaTime);
+
+            // transform.Translate(Vector3.forward);
 
         }
         else
         {
             return;
         }
+
+
     }//Update
 
     private bool OnSlope()
