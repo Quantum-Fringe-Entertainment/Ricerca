@@ -1,5 +1,9 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerMovement.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="11" Column="51" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="57ee4557-fd1c-4bc0-ad5f-64589c2fac18" />
