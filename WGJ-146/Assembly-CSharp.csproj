@@ -63,8 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\AvalancheSpawnner.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\SnowSpawnner.cs" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Object.shader" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Global.shader" />
