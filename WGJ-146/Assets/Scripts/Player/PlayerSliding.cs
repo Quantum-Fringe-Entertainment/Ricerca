@@ -8,6 +8,7 @@ public class PlayerSliding : MonoBehaviour
    // public float moveSpeed = 5f;
     [HideInInspector] private CharacterController _charController;
     [HideInInspector] private Animator _playerAnim;
+    private ParticleSystem _SnowEffect;
    // public Camera cam;
 
 
@@ -22,7 +23,9 @@ public class PlayerSliding : MonoBehaviour
     {
         _charController = GetComponent<CharacterController>();
         _playerAnim = GetComponent<Animator>();
-       // Cursor.visible = false;
+        _SnowEffect = GetComponentInChildren<ParticleSystem>();
+        _SnowEffect.Pause();
+        // Cursor.visible = false;
     }//Start
 
     private void Update()
@@ -66,6 +69,10 @@ public class PlayerSliding : MonoBehaviour
 
             _charController.Move(transform.forward * _charController.height / 2 * _SlopeForce * Time.deltaTime);
 
+           // transform.Translate(Vector3.forward);
+
+           // transform.position = transform.forward * _SlopeForce * Time.deltaTime;
+
             // transform.Translate(Vector3.forward);
 
         }
@@ -99,13 +106,14 @@ public class PlayerSliding : MonoBehaviour
         {
             _playerAnim.SetTrigger("SlopeStarts");
             // z = 1;
-
+            _SnowEffect.Play();
 
         }
 
         if (other.CompareTag("Exit"))
         {
             _playerAnim.SetTrigger("SlopeEnds");
+            _SnowEffect.gameObject.SetActive(false);
         }
     }
 
