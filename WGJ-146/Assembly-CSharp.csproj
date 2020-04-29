@@ -63,7 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayerSliding.cs" />
     <Compile Include="Assets\SAFullBodyIK-master\Extensions\Scripts\FullBodyIKUnityChan.cs" />
     <Compile Include="Assets\SAFullBodyIK-master\Extensions\Scripts\FullBodyIKUnityChanBehaviour.cs" />
     <Compile Include="Assets\SAFullBodyIK-master\Scripts\FullBodyIK.cs" />
@@ -79,6 +78,7 @@
     <Compile Include="Assets\SAFullBodyIK-master\Scripts\FullBodyIKBehaviour.cs" />
     <Compile Include="Assets\SAFullBodyIK-master\Scripts\FullBodyIKBehaviourBase.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerSliding.cs" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
     <None Include="Assets\SAFullBodyIK-master\Settings_jp.txt" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Object.shader" />
