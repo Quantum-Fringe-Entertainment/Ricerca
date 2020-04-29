@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Entry
   - Exit
+  - Spike
+  - Ramp
+  - SpikeCollection
   layers:
   - Default
   - TransparentFX
