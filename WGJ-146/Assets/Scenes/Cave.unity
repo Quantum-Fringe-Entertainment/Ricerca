@@ -181,10 +181,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &122786250
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -306,10 +306,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &278760828
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -431,10 +431,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &293035367
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -647,10 +647,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &532782158
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -772,10 +772,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &551355073
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1107,10 +1107,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &662285506
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1232,10 +1232,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &892283349
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1357,10 +1357,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &939892669
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1508,10 +1508,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &1035789067
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1633,10 +1633,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &1036863937
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1787,10 +1787,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &1116003706
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1909,10 +1909,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &1150495826
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2107,10 +2107,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &1319424580
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2261,10 +2261,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &1451159404
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7140,10 +7140,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &1512274772
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7266,7 +7266,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bef96b6e1cd37444fa6937ae99361014, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -88.5
+      value: -87.2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bef96b6e1cd37444fa6937ae99361014, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7349,10 +7349,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &1693914976
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7456,7 +7456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 9680bb21f6e9c5e46845d5c6875584e9, type: 3}
       propertyPath: m_TagString
-      value: Ramp
+      value: ramp1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9680bb21f6e9c5e46845d5c6875584e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7468,7 +7468,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9680bb21f6e9c5e46845d5c6875584e9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 75
+      value: 74.9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9680bb21f6e9c5e46845d5c6875584e9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -7576,10 +7576,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &1811709923
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7701,10 +7701,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &1845969960
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7867,10 +7867,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &1903352997
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7974,7 +7974,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 9680bb21f6e9c5e46845d5c6875584e9, type: 3}
       propertyPath: m_TagString
-      value: Ramp
+      value: ramp2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9680bb21f6e9c5e46845d5c6875584e9, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7982,11 +7982,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9680bb21f6e9c5e46845d5c6875584e9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -89.4
+      value: -88.5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9680bb21f6e9c5e46845d5c6875584e9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 125
+      value: 125.8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 9680bb21f6e9c5e46845d5c6875584e9, type: 3}
       propertyPath: m_LocalRotation.x
@@ -8094,10 +8094,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.8
+  m_Radius: 0.7
   m_Height: 1
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: -0.09, z: 0.03}
+  m_Center: {x: 0, y: 0.1, z: 0}
 --- !u!23 &2120897644
 MeshRenderer:
   m_ObjectHideFlags: 0

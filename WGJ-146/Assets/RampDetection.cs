@@ -19,7 +19,7 @@ public class RampDetection : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Ramp"))
+        if (collision.gameObject.CompareTag("Ramp") || collision.gameObject.CompareTag("ramp1") || collision.gameObject.CompareTag("ramp2"))
         {
             SpikesRespawn.SpikesDetected++;
         }

@@ -9,6 +9,8 @@ TagManager:
   - Spike
   - Ramp
   - SpikeCollection
+  - ramp1
+  - ramp2
   layers:
   - Default
   - TransparentFX
