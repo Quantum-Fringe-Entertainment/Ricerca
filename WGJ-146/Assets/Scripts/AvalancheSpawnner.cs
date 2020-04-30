@@ -15,6 +15,7 @@ public class AvalancheSpawnner : MonoBehaviour
     [Space]
     public bool spawnAvalanche;
 
+
     private float t = 0f;
     private void Update()
     {
