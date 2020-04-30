@@ -13,7 +13,7 @@ public class AvalancheSpawnner : MonoBehaviour
     [Space]
     public GameObject player;
     [Space]
-    [SerializeField] private bool spawnAvalanche;
+    public bool spawnAvalanche;
 
     private float t = 0f;
     private void Update()
@@ -31,11 +31,5 @@ public class AvalancheSpawnner : MonoBehaviour
             }
             t += Time.deltaTime;
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == GameTriggers.Avalanche)
-            spawnAvalanche = true;
     }
 }

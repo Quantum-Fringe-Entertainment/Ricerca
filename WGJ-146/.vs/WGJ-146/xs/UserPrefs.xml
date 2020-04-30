@@ -1,9 +1,10 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tag Holder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/Player Collisions.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="11" Column="5" />
-      <File FileName="Assets/Scripts/AvalancheSpawnner.cs" Line="35" Column="9" />
-      <File FileName="Assets/Scripts/Tag Holder.cs" Line="5" Column="1" />
+      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="85" Column="4" />
+      <File FileName="Assets/Scripts/AvalancheSpawnner.cs" Line="16" Column="4" />
+      <File FileName="Assets/Scripts/Tag Holder.cs" Line="7" Column="49" />
+      <File FileName="Assets/Scripts/Player/Player Collisions.cs" Line="7" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -11,8 +12,9 @@
           <Node name="WGJ-146" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Player" expanded="True" />
-                <Node name="Tag Holder.cs" selected="True" />
+                <Node name="Player" expanded="True">
+                  <Node name="Player Collisions.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -22,7 +24,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d3a4f4ff-9462-4c22-bb64-9bc741375b8f" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f18eba85-1374-496c-b7ce-d0e8ef16527c" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

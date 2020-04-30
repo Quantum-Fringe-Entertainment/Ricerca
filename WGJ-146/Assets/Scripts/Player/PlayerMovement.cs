@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     private bool jumpMaar = false;
 
 
+    
     void Start()
     {
         _charController = GetComponent<CharacterController>();
@@ -74,11 +75,13 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        print(moveDirection);
+        //print(moveDirection);
         _charController.Move(moveDirection);
 
 
     }//Update
 
+
+   
 
 }//class PlayerMovement
