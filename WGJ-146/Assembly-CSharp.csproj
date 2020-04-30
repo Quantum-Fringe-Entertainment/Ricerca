@@ -63,6 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_CameraControl.cs" />
+    <Compile Include="Assets\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_CloudsControl.cs" />
+    <Compile Include="Assets\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_FireLightControl.cs" />
+    <Compile Include="Assets\Low Poly Rocks Pack\Bonus Assets\Scripts\LowPolyRocks_SunControl.cs" />
     <Compile Include="Assets\Scripts\AvalancheSpawnner.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCollisions.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
@@ -70,6 +74,7 @@
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Object.shader" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Global.shader" />
+    <None Include="Assets\Low Poly Rocks Pack\Demo\Asset _Scenes\Info.txt" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Object.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
