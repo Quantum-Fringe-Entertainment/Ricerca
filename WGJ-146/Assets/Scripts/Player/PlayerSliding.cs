@@ -65,7 +65,7 @@ public class PlayerSliding : MonoBehaviour
         {
             _charController.Move(Vector3.down * _charController.height / 2 * _SlopeForce * Time.deltaTime);
 
-            //transform.position += transform.forward * _charController.height / 2 * _SlopeForce * Time.deltaTime;
+           // transform.position += transform.forward * _charController.height / 2 * _SlopeForce * Time.deltaTime;
 
             _charController.Move(transform.forward * _charController.height / 2 * _SlopeForce * Time.deltaTime);
 
@@ -108,10 +108,13 @@ public class PlayerSliding : MonoBehaviour
             // z = 1;
             _SnowEffect.Play();
 
+           // gameObject.GetComponent<PlayerMovement>().enabled = false;
+
         }
 
         if (other.CompareTag("Exit"))
         {
+           // gameObject.GetComponent<PlayerMovement>().enabled = true;
             _playerAnim.SetTrigger("SlopeEnds");
             _SnowEffect.gameObject.SetActive(false);
         }
