@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/RampDetection.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerSliding.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/PlayerSliding.cs" Line="72" Column="14" />
-      <File FileName="Assets/SpikePool.cs" Line="63" Column="6" />
-      <File FileName="Assets/RampDetection.cs" Line="21" Column="9" />
+      <File FileName="Assets/Scripts/Player/PlayerSliding.cs" Line="117" Column="14" />
+      <File FileName="Assets/SpikePool.cs" Line="59" Column="8" />
+      <File FileName="Assets/RampDetection.cs" Line="22" Column="140" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

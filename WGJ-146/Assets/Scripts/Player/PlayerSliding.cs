@@ -69,7 +69,7 @@ public class PlayerSliding : MonoBehaviour
 
             _charController.Move(transform.forward * _charController.height / 2 * _SlopeForce * Time.deltaTime);
 
-           // transform.Translate(Vector3.forward);
+            //transform.Translate(Vector3.forward);
 
            // transform.position = transform.forward * _SlopeForce * Time.deltaTime;
 
