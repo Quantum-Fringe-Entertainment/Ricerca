@@ -109,9 +109,6 @@
     <Reference Include="Unity.Postprocessing.Editor">
       <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Rider.Editor">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
       <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
