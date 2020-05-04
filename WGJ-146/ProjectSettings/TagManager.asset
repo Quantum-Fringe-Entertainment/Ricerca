@@ -4,17 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-<<<<<<< HEAD
-  - Entry
-  - Exit
-  - Spike
-  - Ramp
-  - SpikeCollection
-  - ramp1
-  - ramp2
-=======
   - Avalanche
->>>>>>> RepairedV1
   layers:
   - Default
   - TransparentFX
