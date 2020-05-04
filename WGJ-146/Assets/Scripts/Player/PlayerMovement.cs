@@ -14,17 +14,11 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector] private Animator _playerAnim;
     public Camera cam;
 
-<<<<<<< HEAD
-   
-
-  
-=======
     private float t = 1f;
     private bool jumpMaar = false;
 
 
     
->>>>>>> RepairedV1
     void Start()
     {
         _charController = GetComponent<CharacterController>();
@@ -35,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         float x = Input.GetAxis("Horizontal");
-         float z = Input.GetAxis("Vertical");
+        float z = Input.GetAxis("Vertical");
 
         moveDirection = cam.transform.right * x + cam.transform.forward * z;
         if (moveDirection != Vector3.zero)
@@ -73,13 +67,6 @@ public class PlayerMovement : MonoBehaviour
             _playerAnim.SetBool("isWalking", false);
         }
 
-<<<<<<< HEAD
-       
-    }//Update
-
-   
-
-=======
         if (jumpMaar && t <= 0.08)
         {
             moveDirection.y = Mathf.Lerp(moveDirection.y, -Physics.gravity.y * 0.1f, t);
@@ -96,6 +83,5 @@ public class PlayerMovement : MonoBehaviour
 
 
    
->>>>>>> RepairedV1
 
 }//class PlayerMovement
