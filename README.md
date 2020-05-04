@@ -12,3 +12,4 @@ To be Updated....
 - Mountain climbing on ledges as in uncharted and GOW
 - While walking or climbing on ledge rocks fall upon the player
 - While sliding through the slope,ice spikes fall upon the player inside the cave
+
