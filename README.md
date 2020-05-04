@@ -10,5 +10,5 @@ To be Updated....
 - Going through narrow passages
 - And walking left/right on ledges on the mountain
 - Mountain climbing on ledges as in uncharted and GOW
-- Rope swinging to move forward
 - While walking or climbing on ledge rocks fall upon the player
+- While sliding through the slope,ice spikes fall upon the player inside the cave
