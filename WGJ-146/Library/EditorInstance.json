@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
 	"process_id" : 24021,
 	"version" : "2019.3.10f1",
 	"app_path" : "/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app",
 	"app_contents_path" : "/Volumes/dev2/Game_Dev/2019.3.10f1/Unity.app/Contents"
+=======
+	"process_id" : 755,
+	"version" : "2019.3.0f6",
+	"app_path" : "/Applications/Unity/Hub/Editor/2019.3.0f6/Unity.app",
+	"app_contents_path" : "/Applications/Unity/Hub/Editor/2019.3.0f6/Unity.app/Contents"
+>>>>>>> RepairedV1
 }
