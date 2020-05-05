@@ -8,7 +8,6 @@ public class PlayerCollisions : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        print(other.tag);
         if (other.tag == GameTriggers.Avalanche)
             spawnner.spawnAvalanche = true;
     }

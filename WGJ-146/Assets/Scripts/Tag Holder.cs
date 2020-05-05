@@ -5,4 +5,5 @@ using UnityEngine;
 public class GameTriggers
 {
     public const string Avalanche = "Avalanche";
+    public const string Ghat = "Ghat";
 }
