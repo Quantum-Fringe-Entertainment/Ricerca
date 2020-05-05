@@ -8,29 +8,46 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpSpeed = 3f;
     public float gravityRelaxation = 0.6f;
-    private Vector3 moveDirection = Vector3.zero;
+    public Camera cam;
+    public Transform stumbleCheckPoint;
+    public float rayLength = 2f;
 
     [HideInInspector] private CharacterController _charController;
-    [HideInInspector] private Animator _playerAnim;
-    public Camera cam;
-
+    [HideInInspector] private PlayerAnimations playerAnimations;
+    private Vector3 moveDirection = Vector3.zero;
     private float t = 1f;
     private bool jumpMaar = false;
+    private float x;
+    private float z;
 
 
     
     void Start()
     {
         _charController = GetComponent<CharacterController>();
-        _playerAnim = GetComponent<Animator>();
+        playerAnimations = GetComponent<PlayerAnimations>();
         Cursor.visible = false;
     }//Start
 
     private void Update()
     {
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+         x = Input.GetAxis(Axis.Horizontal);
+         z = Input.GetAxis(Axis.Vertical);
 
+
+
+        GetPlayerDirection();
+        JumpAndGravity();
+        SetPlayerAnimations();
+
+        _charController.Move(moveDirection);
+
+
+    }//Update
+
+
+    void GetPlayerDirection()
+    {
         moveDirection = cam.transform.right * x + cam.transform.forward * z;
         if (moveDirection != Vector3.zero)
         {
@@ -45,7 +62,11 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        if (Input.GetButtonDown("Jump") && _charController.isGrounded)
+    }
+
+    void JumpAndGravity()
+    {
+        if (Input.GetButtonDown(Axis.Jump) && _charController.isGrounded)
         {
             //moveDirection.y -= Physics.gravity.y * Time.deltaTime * jumpSpeed;
             jumpMaar = true;
@@ -57,16 +78,6 @@ public class PlayerMovement : MonoBehaviour
             moveDirection.y += Physics.gravity.y * Time.deltaTime * gravityRelaxation;
         }
 
-
-        if (x > 0 || x < 0 || z > 0 || z < 0)
-        {
-            _playerAnim.SetBool("isWalking", true);
-        }
-        else
-        {
-            _playerAnim.SetBool("isWalking", false);
-        }
-
         if (jumpMaar && t <= 0.08)
         {
             moveDirection.y = Mathf.Lerp(moveDirection.y, -Physics.gravity.y * 0.1f, t);
@@ -74,14 +85,28 @@ public class PlayerMovement : MonoBehaviour
             t += 0.15f * Time.deltaTime;
 
         }
+    }
 
-        //print(moveDirection);
-        _charController.Move(moveDirection);
+    void SetPlayerAnimations()
+    {
+        if (x > 0 || x < 0 || z > 0 || z < 0)
+        {
+            playerAnimations.StartWalking();
+        }
+        else
+        {
+            playerAnimations.StopWalking();
+        }
 
-
-    }//Update
-
-
-   
+        if(Physics.Raycast(stumbleCheckPoint.position,transform.forward,out RaycastHit raycastHit,rayLength))
+        {
+            Debug.DrawLine(stumbleCheckPoint.position, raycastHit.point, color: Color.black);
+            if(raycastHit.collider.tag == GameTriggers.Rocks)
+            {
+                print("Damn the Rock!!!!");
+                playerAnimations.Stumble();
+            }
+        }
+    }
 
 }//class PlayerMovement

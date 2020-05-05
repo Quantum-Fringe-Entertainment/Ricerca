@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2383088, guid: 695627ce37d8c9a4b9807c6c65b5e5c9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3264003976335881735, guid: f301eac115827412cb4809371c5c31e8,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 695627ce37d8c9a4b9807c6c65b5e5c9, type: 3}
 --- !u!4 &2740788244244833003 stripped
@@ -207,6 +212,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2383088, guid: d2a9274cdc12a46b3a5c0b7977b48b48, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3264003976335881735, guid: f301eac115827412cb4809371c5c31e8,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2a9274cdc12a46b3a5c0b7977b48b48, type: 3}
 --- !u!4 &2740788244788060716 stripped
@@ -282,6 +292,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2325886, guid: 9c91b2a1e02748e4ca618242bbd2acad, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3264003976335881735, guid: f301eac115827412cb4809371c5c31e8,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c91b2a1e02748e4ca618242bbd2acad, type: 3}
 --- !u!4 &2740788245369266364 stripped
@@ -357,6 +372,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2343754, guid: dfba162dc1c9b44b596b58152d441f39, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -3264003976335881735, guid: f301eac115827412cb4809371c5c31e8,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dfba162dc1c9b44b596b58152d441f39, type: 3}
 --- !u!4 &2740788245530363837 stripped
