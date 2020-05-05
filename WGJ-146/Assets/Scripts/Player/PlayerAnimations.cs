@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class PlayerAnimations : MonoBehaviour
 {
     private Animator m_playerAnim;
+    public PlayableDirector stumbleScene;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,7 @@ public class PlayerAnimations : MonoBehaviour
 
     public void Stumble()
     {
-        m_playerAnim.SetTrigger(PlayerAC_Parameters.Stumble);
+        //m_playerAnim.SetTrigger(PlayerAC_Parameters.Stumble);
+        stumbleScene.Play();
     }
 }

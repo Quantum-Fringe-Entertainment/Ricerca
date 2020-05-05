@@ -98,10 +98,19 @@ public class PlayerMovement : MonoBehaviour
             playerAnimations.StopWalking();
         }
 
-        if(Physics.Raycast(stumbleCheckPoint.position,transform.forward,out RaycastHit raycastHit,rayLength))
+        if(Physics.Raycast(stumbleCheckPoint.position,transform.forward,out RaycastHit raycastHitForward,rayLength))
         {
-            Debug.DrawLine(stumbleCheckPoint.position, raycastHit.point, color: Color.black);
-            if(raycastHit.collider.tag == GameTriggers.Rocks)
+            Debug.DrawLine(stumbleCheckPoint.position, raycastHitForward.point, color: Color.black);
+            if(raycastHitForward.collider.tag == GameTriggers.Rocks)
+            {
+                print("Damn the Rock!!!!");
+                playerAnimations.Stumble();
+            }
+        }
+        if (Physics.Raycast(stumbleCheckPoint.position, transform.right, out RaycastHit raycastHitRight, rayLength))
+        {
+            Debug.DrawLine(stumbleCheckPoint.position, raycastHitRight.point, color: Color.black);
+            if (raycastHitRight.collider.tag == GameTriggers.Rocks)
             {
                 print("Damn the Rock!!!!");
                 playerAnimations.Stumble();

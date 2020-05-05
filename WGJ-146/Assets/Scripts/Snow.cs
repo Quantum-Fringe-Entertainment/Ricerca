@@ -12,7 +12,7 @@ public class Snow : MonoBehaviour
         if(collision.collider.tag == GameTriggers.Ghat)
         {
             GameObject snowfx = Instantiate(snowDestroyVFX, gameObject.transform.position, snowDestroyVFX.transform.rotation);
-            GameObject debrisObj = Instantiate(debris, gameObject.transform.position, Quaternion.identity);
+            GameObject debrisObj = Instantiate(debris, gameObject.transform.position, debris.transform.rotation);
             Destroy(snowfx, 3f);
             Destroy(debrisObj, 3f);
             Destroy(gameObject);
