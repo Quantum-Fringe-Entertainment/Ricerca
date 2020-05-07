@@ -64,9 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AvalancheSpawnner.cs" />
-    <Compile Include="Assets\Scripts\Player\PlayerAnimations.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCollisions.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
     <Compile Include="Assets\Scripts\Snow.cs" />
     <Compile Include="Assets\Scripts\Tag Holder.cs" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />

@@ -1,12 +1,10 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tag Holder.cs">
     <Files>
-      <File FileName="Assets/Scripts/Tag Holder.cs" Line="8" Column="39" IsPinned="True" />
-      <File FileName="Assets/Scripts/AvalancheSpawnner.cs" Line="15" Column="12" />
-      <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" Line="11" Column="1" />
-      <File FileName="Assets/Scripts/Snow.cs" Line="22" Column="1" />
-      <File FileName="Assets/Scripts/Player/PlayerAnimations.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Tag Holder.cs" Line="22" Column="45" IsPinned="True" />
+      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="112" Column="71" />
+      <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" Line="15" Column="78" />
+      <File FileName="Assets/Scripts/Player/PlayerState.cs" Line="6" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,7 +23,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="456c3a61-786e-4359-82ee-334ed68f8b62" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8ab5c390-4e39-4400-98e5-fb90e48ce2f4" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

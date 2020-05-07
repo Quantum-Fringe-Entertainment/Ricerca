@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,9 +12,10 @@ public class PlayerMovement : MonoBehaviour
     public Camera cam;
     public Transform stumbleCheckPoint;
     public float rayLength = 2f;
+    public CinemachineFreeLook mainPlayerCamera;
 
     [HideInInspector] private CharacterController _charController;
-    [HideInInspector] private PlayerAnimations playerAnimations;
+    [HideInInspector] private PlayerState playerState;
     private Vector3 moveDirection = Vector3.zero;
     private float t = 1f;
     private bool jumpMaar = false;
@@ -25,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         _charController = GetComponent<CharacterController>();
-        playerAnimations = GetComponent<PlayerAnimations>();
+        playerState = GetComponent<PlayerState>();
         Cursor.visible = false;
     }//Start
 
@@ -39,6 +41,7 @@ public class PlayerMovement : MonoBehaviour
         GetPlayerDirection();
         JumpAndGravity();
         SetPlayerAnimations();
+        DisableCamControl();
 
         _charController.Move(moveDirection);
 
@@ -49,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     void GetPlayerDirection()
     {
         moveDirection = cam.transform.right * x + cam.transform.forward * z;
-        if (moveDirection != Vector3.zero)
+        if (moveDirection != Vector3.zero && playerState.currentPlayerState == GetPlayerState.isWalking)
         {
             //Player Rotation
             Quaternion rotDir = Quaternion.LookRotation(moveDirection);
@@ -61,6 +64,8 @@ public class PlayerMovement : MonoBehaviour
             moveDirection = transform.forward * moveSpeed * Time.deltaTime;
 
         }
+        else
+            moveDirection = Vector3.zero;
 
     }
 
@@ -89,22 +94,32 @@ public class PlayerMovement : MonoBehaviour
 
     void SetPlayerAnimations()
     {
-        if (x > 0 || x < 0 || z > 0 || z < 0)
+        if ((playerState.currentPlayerState != GetPlayerState.isStumbling) && (playerState.currentPlayerState != GetPlayerState.isStandingUp))
         {
-            playerAnimations.StartWalking();
-        }
-        else
-        {
-            playerAnimations.StopWalking();
+
+            if (x > 0 || x < 0 || z > 0 || z < 0)
+            {
+                print("Shouldn't come here");
+                playerState.StartWalking();
+                playerState.currentPlayerState = GetPlayerState.isWalking;
+            }
+            else
+            {
+                print("Shouldn't come here into else too");
+                playerState.StopWalking();
+                playerState.currentPlayerState = GetPlayerState.isIdle;
+            }
         }
 
-        if(Physics.Raycast(stumbleCheckPoint.position,transform.forward,out RaycastHit raycastHitForward,rayLength))
+
+        if (Physics.Raycast(stumbleCheckPoint.position,transform.forward,out RaycastHit raycastHitForward,rayLength))
         {
             Debug.DrawLine(stumbleCheckPoint.position, raycastHitForward.point, color: Color.black);
             if(raycastHitForward.collider.tag == GameTriggers.Rocks)
             {
-                print("Damn the Rock!!!!");
-                playerAnimations.Stumble();
+                playerState.Stumble();
+                playerState.currentPlayerState = GetPlayerState.isStumbling;
+
             }
         }
         if (Physics.Raycast(stumbleCheckPoint.position, transform.right, out RaycastHit raycastHitRight, rayLength))
@@ -112,10 +127,24 @@ public class PlayerMovement : MonoBehaviour
             Debug.DrawLine(stumbleCheckPoint.position, raycastHitRight.point, color: Color.black);
             if (raycastHitRight.collider.tag == GameTriggers.Rocks)
             {
-                print("Damn the Rock!!!!");
-                playerAnimations.Stumble();
+                playerState.Stumble();
+                playerState.currentPlayerState = GetPlayerState.isStumbling;
             }
         }
     }
 
+
+    void DisableCamControl()
+    {
+        if ((playerState.currentPlayerState == GetPlayerState.isStumbling) || (playerState.currentPlayerState == GetPlayerState.isStandingUp))
+        {
+            mainPlayerCamera.m_YAxis.m_InputAxisName = "";
+            mainPlayerCamera.m_XAxis.m_InputAxisName = "";
+        }
+        else
+        {
+            mainPlayerCamera.m_YAxis.m_InputAxisName = "Mouse Y";
+            mainPlayerCamera.m_XAxis.m_InputAxisName = "Mouse X";
+        }
+    }
 }//class PlayerMovement
