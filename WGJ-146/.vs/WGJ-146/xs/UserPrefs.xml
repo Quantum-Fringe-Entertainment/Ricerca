@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Tag Holder.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Snow.cs">
     <Files>
       <File FileName="Assets/Scripts/Tag Holder.cs" Line="22" Column="45" IsPinned="True" />
-      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="112" Column="71" />
+      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="150" Column="1" />
       <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" Line="15" Column="78" />
-      <File FileName="Assets/Scripts/Player/PlayerState.cs" Line="6" Column="30" />
+      <File FileName="Assets/Scripts/Player/PlayerState.cs" Line="43" Column="19" />
+      <File FileName="Assets/Scripts/Snow.cs" Line="17" Column="38" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +14,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Player" expanded="True" />
-                <Node name="Tag Holder.cs" selected="True" />
+                <Node name="Snow.cs" selected="True" />
               </Node>
             </Node>
           </Node>

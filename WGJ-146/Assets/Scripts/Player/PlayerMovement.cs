@@ -133,7 +133,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
     void DisableCamControl()
     {
         if ((playerState.currentPlayerState == GetPlayerState.isStumbling) || (playerState.currentPlayerState == GetPlayerState.isStandingUp))
