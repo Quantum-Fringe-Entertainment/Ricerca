@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Rocks.cs">
     <Files>
       <File FileName="Assets/Scripts/Tag Holder.cs" Line="22" Column="45" IsPinned="True" />
       <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="150" Column="1" />
       <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" />
-      <File FileName="Assets/Scripts/Player/PlayerState.cs" />
-      <File FileName="Assets/Scripts/Snow.cs" Line="17" Column="38" />
+      <File FileName="Assets/Scripts/Player/PlayerState.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AvalancheSpawnner.cs" Line="20" Column="26" />
+      <File FileName="Assets/Scripts/Rocks.cs" Line="4" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,9 +14,8 @@
           <Node name="WGJ-146" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Player" expanded="True">
-                  <Node name="PlayerMovement.cs" selected="True" />
-                </Node>
+                <Node name="Player" expanded="True" />
+                <Node name="Rocks.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -25,7 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="4bd4fe35-8459-42d0-91af-8e4bdbd8fa76" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0af3f38e-731c-4e78-9913-ed486f136a1d" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

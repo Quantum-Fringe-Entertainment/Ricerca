@@ -25,7 +25,7 @@ public class PlayerState : MonoBehaviour
     void Start()
     {
         m_playerAnim = GetComponent<Animator>();
-        currentPlayerState = GetPlayerState.isStandingUp;
+        currentPlayerState = GetPlayerState.isIdle;
     }
 
     public void StartWalking()
