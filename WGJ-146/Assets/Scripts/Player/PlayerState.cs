@@ -123,23 +123,14 @@ public class PlayerState : MonoBehaviour
             }
         }
 
-        if (Physics.Raycast(stumbleCheckPoint.position, transform.forward, out RaycastHit raycastHitLeft, stumbleRayLength))
+        if (Physics.Raycast(stumbleCheckPoint.position, -transform.right, out RaycastHit raycastHitLeft, stumbleRayLength))
         {
-            Debug.DrawLine(stumbleCheckPoint.position, raycastHitForward.point, color: Color.black);
+            Debug.DrawLine(stumbleCheckPoint.position, raycastHitLeft.point, color: Color.black);
             if (raycastHitForward.collider.tag == GameTriggers.Rocks)
             {
                 Stumble();
                 currentPlayerState = GetPlayerState.isStumbling;
 
-            }
-        }
-        if (Physics.Raycast(stumbleCheckPoint.position, transform.right, out RaycastHit raycastHitBack, stumbleRayLength))
-        {
-            Debug.DrawLine(stumbleCheckPoint.position, raycastHitBack.point, color: Color.black);
-            if (raycastHitRight.collider.tag == GameTriggers.Rocks)
-            {
-                Stumble();
-                currentPlayerState = GetPlayerState.isStumbling;
             }
         }
     }

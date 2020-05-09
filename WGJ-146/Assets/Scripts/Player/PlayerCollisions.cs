@@ -18,7 +18,10 @@ public class PlayerCollisions : MonoBehaviour
         if (other.tag == GameTriggers.Rocks)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         if (other.tag == GameTriggers.CutScenes.PettingAndExploring)
+        {
             pettingAndExploringScene.Play();
+            other.gameObject.SetActive(false);
+        }
 
     }
 }
