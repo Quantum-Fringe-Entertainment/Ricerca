@@ -15,7 +15,9 @@ using Cinemachine;
     isGrabbingLedge,
     isDead,
     isStumbling,
-    isStandingUp
+    isStandingUp,
+    isPettingAndExploring,
+    isBeingChased
 }
 
 public class PlayerState : MonoBehaviour
@@ -56,14 +58,17 @@ public class PlayerState : MonoBehaviour
 
     public void PlayerIsStandingUp()
     {
-        print("Kumbaaya!!!!");
         currentPlayerState = GetPlayerState.isStandingUp;
     }
 
     public void PlayerStoodUp()
     {
-        print("BC !!  nahiiii");
         currentPlayerState = GetPlayerState.isIdle;
+    }
+
+    public void PettingAndExploring()
+    {
+        currentPlayerState = GetPlayerState.isPettingAndExploring;
     }
 
     private void Update()
@@ -82,7 +87,7 @@ public class PlayerState : MonoBehaviour
 
     void SetPlayerAnimations()
     {
-        if (( currentPlayerState != GetPlayerState.isStumbling) && ( currentPlayerState != GetPlayerState.isStandingUp))
+        if (( currentPlayerState != GetPlayerState.isStumbling) && ( currentPlayerState != GetPlayerState.isStandingUp) && (currentPlayerState != GetPlayerState.isPettingAndExploring))
         {
 
             if (x > 0 || x < 0 || z > 0 || z < 0)
@@ -141,7 +146,7 @@ public class PlayerState : MonoBehaviour
 
     void DisableCamControl()
     {
-        if (( currentPlayerState == GetPlayerState.isStumbling) || ( currentPlayerState == GetPlayerState.isStandingUp))
+        if (( currentPlayerState == GetPlayerState.isStumbling) || ( currentPlayerState == GetPlayerState.isStandingUp) || (currentPlayerState == GetPlayerState.isPettingAndExploring))
         {
             mainPlayerCamera.m_YAxis.m_InputAxisName = "";
             mainPlayerCamera.m_XAxis.m_InputAxisName = "";

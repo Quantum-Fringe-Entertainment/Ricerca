@@ -1,12 +1,13 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerState.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ReverseAnimationClip.cs">
     <Files>
-      <File FileName="Assets/Scripts/Tag Holder.cs" Line="22" Column="45" IsPinned="True" />
+      <File FileName="Assets/Scripts/Tag Holder.cs" Line="8" Column="58" IsPinned="True" />
       <File FileName="Assets/Scripts/Player/PlayerMovement.cs" />
+      <File FileName="Assets/Scripts/Player/PlayerState.cs" Line="25" Column="35" />
       <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" />
-      <File FileName="Assets/Scripts/Player/PlayerState.cs" Line="28" Column="51" />
-      <File FileName="Assets/Scripts/AvalancheSpawnner.cs" Line="20" Column="26" />
-      <File FileName="Assets/Scripts/Rocks.cs" Line="25" Column="6" />
+      <File FileName="Assets/Scripts/AvalancheSpawnner.cs" />
+      <File FileName="Assets/Scripts/Rocks.cs" />
+      <File FileName="Assets/Scripts/ReverseAnimationClip.cs" Line="75" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,9 +15,8 @@
           <Node name="WGJ-146" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Player" expanded="True">
-                  <Node name="PlayerState.cs" selected="True" />
-                </Node>
+                <Node name="Player" expanded="True" />
+                <Node name="ReverseAnimationClip.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -26,7 +26,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0397c69b-22e9-42e0-8ed1-552b5e88bc64" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="16eb62fc-7db1-4c26-9155-7f0d20209de6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

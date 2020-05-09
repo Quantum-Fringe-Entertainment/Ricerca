@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeInFrames: 1
-  timeAreaShownRange: {x: 2.1873238, y: 10.378626}
+  timeAreaShownRange: {x: -0.12046035, y: 8.070843}
   showAudioWaveform: 1
   trackScale: 1
   playRangeEnabled: 0
@@ -237,5 +237,5 @@ MonoBehaviour:
       y: 1
       width: 1
       height: 1
-    m_MarkerTimeStampsKeys: 265bfcfffe620000
-    m_MarkerTimeStampsValues: 807c68cd86f2d7084226c88fd9f3d708
+    m_MarkerTimeStampsKeys: 265bfcfffe620000566b0000
+    m_MarkerTimeStampsValues: 807c68cd86f2d7084226c88fd9f3d7087a47b0dcfff3d708
