@@ -9,7 +9,7 @@ public class AvalancheSpawnner : MonoBehaviour
     public float spawnDistanceMin = 5f;
     public float spawnRate = 1;
     [Space]
-    public GameObject avalancheprefab;
+    public GameObject[] avalancheRocks;
     [Space]
     public GameObject player;
     [Space]
@@ -26,7 +26,7 @@ public class AvalancheSpawnner : MonoBehaviour
 
             if (t > spawnRate)
             {
-                GameObject snow = Instantiate(avalancheprefab, spawnLocation, player.transform.rotation);
+                GameObject snow = Instantiate(avalancheRocks[Random.Range(0,avalancheRocks.Length - 1)], spawnLocation, player.transform.rotation);
                 Destroy(snow, 10f);
                 t = 0;
             }

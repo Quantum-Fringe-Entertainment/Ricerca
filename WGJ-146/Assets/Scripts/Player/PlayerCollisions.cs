@@ -11,6 +11,8 @@ public class PlayerCollisions : MonoBehaviour
     {
         if (other.tag == GameTriggers.Avalanche)
             spawnner.spawnAvalanche = true;
+        if(other.tag == GameTriggers.StopAvalanche)
+            spawnner.spawnAvalanche = false;
         if (other.tag == GameTriggers.Rocks)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
