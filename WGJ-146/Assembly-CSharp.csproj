@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
     <Compile Include="Assets\Scripts\ReverseAnimationClip.cs" />
     <Compile Include="Assets\Scripts\Rocks.cs" />
+    <Compile Include="Assets\Scripts\Seagull.cs" />
     <Compile Include="Assets\Scripts\Tag Holder.cs" />
     <Compile Include="Assets\[Imported Assets]\Low Poly Animated Animals\- Scripts\AnimationControl.cs" />
     <Compile Include="Assets\[Imported Assets]\Low Poly Animated Animals\- Scripts\DeathButtonControl.cs" />

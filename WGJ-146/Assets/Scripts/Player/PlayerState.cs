@@ -126,7 +126,7 @@ public class PlayerState : MonoBehaviour
         if (Physics.Raycast(stumbleCheckPoint.position, -transform.right, out RaycastHit raycastHitLeft, stumbleRayLength))
         {
             Debug.DrawLine(stumbleCheckPoint.position, raycastHitLeft.point, color: Color.black);
-            if (raycastHitForward.collider.tag == GameTriggers.Rocks)
+            if (raycastHitLeft.collider.tag == GameTriggers.Rocks)
             {
                 Stumble();
                 currentPlayerState = GetPlayerState.isStumbling;

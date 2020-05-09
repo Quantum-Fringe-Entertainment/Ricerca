@@ -30,7 +30,18 @@ public class PlayerAC_Parameters
     public const string SnowBlast = "SnowBlast";
 }
 
+public class AnimalAC_Parameters
+{
+    public const string isSitting = "isSitting"; 
+}
+
+
 public class UIReferences
 {
     public const string SnowUIfx = "SnowUIfx";
+}
+
+public class Characters
+{
+    public const string Player = "Player";
 }
