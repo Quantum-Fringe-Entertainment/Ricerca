@@ -26,7 +26,9 @@ This tutorial is collection of my experience and resources I've found over the y
 
 [Advanced timeline and Cinemachine tutorial]()
 
-Some advances techniques implemented in game for the bear chase sequence, inspired by [GDC talks about Uncharted4 chase Sequence]() and some advanced tips and tricks for more seasoned timeline/cinemachine users.
+Some advanced tips and tricks for more seasoned timeline/cinemachine users.
+
+Some advances techniques implemented in game for the bear chase sequence are inspired by [GDC talks about Uncharted4 NPC chasing](https://www.youtube.com/watch?v=G8W7EQKBgcg) 
 
 #### [References and learning Resources](https://github.com/Quantum-Fringe-Entertainment/Ricerca/wiki/References)
 
