@@ -4,7 +4,7 @@ The story of a father's pursuit for his lost child.
 #### Story :
 Living in the parts of actic region, Abel and kira have moved on for exploring the beauties of the world, unfortunately his daughter Kira went missing as abel woke, he was dazzled and all he could think was about the well being of his baby girl. He goes on a risky and breath-taking journey to find his daughter. He travels through dangerous places, risking his life to find his daughter. The rest of the story revolves around the challenges he must overcome to find his daughter.
 
-### some shots from the game
+### Some shots from the game :
 <p float="left">
   <img src="https://github.com/Quantum-Fringe-Entertainment/Ricerca/blob/master/ricerca%20SS/1.png" width="400" />
   <img src="https://github.com/Quantum-Fringe-Entertainment/Ricerca/blob/master/ricerca%20SS/2.png" width="400" /> 
@@ -27,6 +27,8 @@ This tutorial is collection of my experience and resources I've found over the y
 [Advanced timeline and Cinemachine tutorial]()
 
 Some advances techniques implemented in game for the bear chase sequence, inspired by [GDC talks about Uncharted4 chase Sequence]() and some advanced tips and tricks for more seasoned timeline/cinemachine users.
+
+#### [References and learning Resources](https://github.com/Quantum-Fringe-Entertainment/Ricerca/wiki/References)
 
 ##### Gameplay features : 
 - Climbing up gill while dodging mini Avalanches
