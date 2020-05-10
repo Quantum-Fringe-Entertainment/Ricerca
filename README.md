@@ -13,7 +13,21 @@ Living in the colder parts of actic region, Abel and kira have moved on for expl
   <img src="https://github.com/Quantum-Fringe-Entertainment/Ricerca/blob/master/ricerca%20SS/5.png" width="400" />
 </p>
 
-#### Core Mechanics : 
+### Mechanics : 
+#### Boid Mechanism for Seagulls :
+Please read the [Riceraca Wiki](https://github.com/Quantum-Fringe-Entertainment/Ricerca/wiki) to know more about the implementation and research process and for resources.
+#### Cinemachine Sequences :
+Over 14 cameras were used in the opening scene to make different cuts, and a PlayerState manager to restrict Input during the cutscenes.
+
+[Learn about Timeline and opening scene camera management here]()
+
+This tutorial is collection of my experience and resources I've found over the years.
+
+[Advanced timeline and Cinemachine tutorial]()
+
+Some advances techniques implemented in game for the bear chase sequence, inspired by [GDC talks about Uncharted4 chase Sequence]() and some advanced tips and tricks for more seasoned timeline/cinemachine users.
+
+##### Gameplay features : 
 - Climbing up gill while dodging mini Avalanches
 - Going through narrow passages
 - And walking left/right on ledges on the mountain
