@@ -16,7 +16,7 @@ Living in the parts of actic region, Abel and kira have moved on for exploring t
 ### Mechanics : 
 Please read the [Riceraca Wiki](https://github.com/Quantum-Fringe-Entertainment/Ricerca/wiki) to know more about the implementation and research process and for resources.
 #### Boid Mechanism for Seagulls :
-Learn about [boid movement]() and [golden ratio obstacle avoidance](https://github.com/Quantum-Fringe-Entertainment/Ricerca/wiki/Golden-Ratio-Obstacle-Avoidance) for the seagulls.
+Learn about [boid movement](https://en.wikipedia.org/wiki/Boids) and [golden ratio obstacle avoidance](https://github.com/Quantum-Fringe-Entertainment/Ricerca/wiki/Golden-Ratio-Obstacle-Avoidance) for the seagulls.
 #### Cinemachine Sequences :
 Over 14 cameras were used in the opening scene to make different cuts, and a PlayerState manager to restrict Input during the cutscenes.
 
