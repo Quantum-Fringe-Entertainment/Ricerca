@@ -1,9 +1,25 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TestingMechanics.cs">
     <Files>
       <File FileName="Assets/Scripts/Player/PlayerSliding.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="14" Column="51" />
+      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="18" Column="35" />
+      <File FileName="Assets/TestingMechanics.cs" Line="24" Column="8" />
+      <File FileName="Assets/Scripts/TestingMechanics.cs" Line="22" Column="13" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WGJ-146" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Player" expanded="True" />
+                <Node name="TestingMechanics.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

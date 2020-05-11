@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerSliding.cs" />
     <Compile Include="Assets\Scripts\Tag Holder.cs" />
+    <Compile Include="Assets\Scripts\TestingMechanics.cs" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
     <None Include="Assets\SAFullBodyIK-master\Settings_jp.txt" />
     <None Include="Assets\PolygonPrototype\Shaders\Prototype_Object.shader" />
