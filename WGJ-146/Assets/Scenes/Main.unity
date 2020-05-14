@@ -5541,7 +5541,7 @@ Transform:
   - {fileID: 1547396772}
   - {fileID: 616656028}
   m_Father: {fileID: 2058583447}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &189326046
 PrefabInstance:
@@ -22159,7 +22159,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830253491}
-  m_LocalRotation: {x: 0.037112296, y: 0.89581203, z: -0.07620327, w: 0.43627575}
+  m_LocalRotation: {x: 0.037112303, y: 0.89581203, z: -0.076203294, w: 0.43627572}
   m_LocalPosition: {x: -200.51404, y: 87.492, z: 256.6957}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -32730,7 +32730,7 @@ NavMeshAgent:
   m_Speed: 3
   m_Acceleration: 1
   avoidancePriority: 50
-  m_AngularSpeed: 80
+  m_AngularSpeed: 160
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -53263,8 +53263,8 @@ Transform:
   - {fileID: 2069266012}
   - {fileID: 1515113111}
   - {fileID: 227837578}
-  - {fileID: 1302814177}
   - {fileID: 188765324}
+  - {fileID: 1302814177}
   m_Father: {fileID: 1552452722}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
