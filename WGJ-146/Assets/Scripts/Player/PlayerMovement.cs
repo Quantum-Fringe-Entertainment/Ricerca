@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     void GetPlayerDirection()
     {
         moveDirection = cam.transform.right * x + cam.transform.forward * z;
-        if (moveDirection != Vector3.zero && playerState.currentPlayerState == GetPlayerState.isWalking)
+        if (moveDirection != Vector3.zero && (playerState.currentPlayerState == GetPlayerState.isWalking || playerState.currentPlayerState == GetPlayerState.isBeingChased))
         {
             //Player Rotation
             Quaternion rotDir = Quaternion.LookRotation(moveDirection);

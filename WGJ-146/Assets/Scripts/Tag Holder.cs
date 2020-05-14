@@ -8,6 +8,7 @@ public class GameTriggers
     public const string StopAvalanche = "Stop Avalanche";
     public const string Ghat = "Ghat";
     public const string Rocks = "Rocks";
+    public const string Chasing = "Chasing";
 
     public class CutScenes
     {
@@ -28,11 +29,13 @@ public class PlayerAC_Parameters
     public const string isWalking = "isWalking";
     public const string Stumble = "Stumble";
     public const string SnowBlast = "SnowBlast";
+    public const string isSprinting = "isSprinting";
 }
 
 public class AnimalAC_Parameters
 {
-    public const string isSitting = "isSitting"; 
+    public const string isFlying = "isFlying";
+    public const string isWalking = "isWalking";
 }
 
 

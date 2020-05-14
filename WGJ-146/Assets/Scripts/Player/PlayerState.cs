@@ -50,6 +50,18 @@ public class PlayerState : MonoBehaviour
         currentPlayerState = GetPlayerState.isIdle;
     }
 
+    public void StartSprinting()
+    {
+        m_playerAnim.SetBool(PlayerAC_Parameters.isSprinting, true);
+        currentPlayerState = GetPlayerState.isBeingChased;
+    }
+
+    public void StopSprinting()
+    {
+        m_playerAnim.SetBool(PlayerAC_Parameters.isSprinting, false);
+        currentPlayerState = GetPlayerState.isIdle;
+    }
+
     public void Stumble()
     {
         stumbleScene.Play();
@@ -77,7 +89,7 @@ public class PlayerState : MonoBehaviour
         x = Input.GetAxis(Axis.Horizontal);
         z = Input.GetAxis(Axis.Vertical);
 
-
+        print(currentPlayerState);
 
         SetPlayerAnimations();
         DisableCamControl();
@@ -87,21 +99,41 @@ public class PlayerState : MonoBehaviour
 
     void SetPlayerAnimations()
     {
-        if (( currentPlayerState != GetPlayerState.isStumbling) && ( currentPlayerState != GetPlayerState.isStandingUp) && (currentPlayerState != GetPlayerState.isPettingAndExploring))
+        if(currentPlayerState != GetPlayerState.isBeingChased)
         {
+            StopSprinting();
+            if ((currentPlayerState != GetPlayerState.isStumbling) && (currentPlayerState != GetPlayerState.isStandingUp) && (currentPlayerState != GetPlayerState.isPettingAndExploring))
+            {
 
-            if (x > 0 || x < 0 || z > 0 || z < 0)
-            {
-                 StartWalking();
-                 currentPlayerState = GetPlayerState.isWalking;
-            }
-            else
-            {
-                 StopWalking();
-                 currentPlayerState = GetPlayerState.isIdle;
+                if (x > 0 || x < 0 || z > 0 || z < 0)
+                {
+                    StartWalking();
+                }
+                else
+                {
+                    StopWalking();
+                }
             }
         }
+        else if (currentPlayerState == GetPlayerState.isBeingChased)
+        {
+            StopWalking();
+            if ((currentPlayerState != GetPlayerState.isStumbling) && (currentPlayerState != GetPlayerState.isStandingUp) && (currentPlayerState != GetPlayerState.isPettingAndExploring))
+            {
 
+                if (x > 0 || x < 0 || z > 0 || z < 0)
+                {
+                    StartSprinting();
+                }
+                else
+                {
+                    StopSprinting();
+                }
+            }
+        }
+       
+
+       
 
         if (Physics.Raycast(stumbleCheckPoint.position, transform.forward, out RaycastHit raycastHitForward, stumbleRayLength))
         {

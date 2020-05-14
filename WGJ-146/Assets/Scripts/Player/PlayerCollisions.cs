@@ -8,6 +8,7 @@ public class PlayerCollisions : MonoBehaviour
 {
     public AvalancheSpawnner spawnner;
     public PlayableDirector pettingAndExploringScene;
+    private bool enableChase;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -22,6 +23,15 @@ public class PlayerCollisions : MonoBehaviour
             pettingAndExploringScene.Play();
             other.gameObject.SetActive(false);
         }
+        if (other.tag == GameTriggers.Chasing)
+        {
+            enableChase = true;
+        }
+    }
 
+    private void Update()
+    {
+        if(enableChase)
+            gameObject.GetComponent<PlayerState>().currentPlayerState = GetPlayerState.isBeingChased;
     }
 }
