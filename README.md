@@ -7,10 +7,12 @@ Living in the parts of actic region, Abel and kira have moved on for exploring t
 ### Some shots from the game :
 <p float="left">
   <img src="https://github.com/Quantum-Fringe-Entertainment/Ricerca/blob/master/ricerca%20SS/1.png" width="400" />
-  <img src="https://github.com/Quantum-Fringe-Entertainment/Ricerca/blob/master/ricerca%20SS/2.png" width="400" /> 
+  <img src="https://github.com/Quantum-Fringe-Entertainment/Ricerca/blob/master/ricerca%20SS/chase%202.png" width="400" />
   <img src="https://github.com/Quantum-Fringe-Entertainment/Ricerca/blob/master/ricerca%20SS/3.png" width="400" />
   <img src="https://github.com/Quantum-Fringe-Entertainment/Ricerca/blob/master/ricerca%20SS/4.png" width="400" /> 
   <img src="https://github.com/Quantum-Fringe-Entertainment/Ricerca/blob/master/ricerca%20SS/5.png" width="400" />
+  <img src="https://github.com/Quantum-Fringe-Entertainment/Ricerca/blob/master/ricerca%20SS/chase%201.png" width="400" />
+  <img src="https://github.com/Quantum-Fringe-Entertainment/Ricerca/blob/master/ricerca%20SS/2.png" width="400" /> 
 </p>
 
 ### Mechanics : 
