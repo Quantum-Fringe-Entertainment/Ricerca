@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\AvalancheSpawnner.cs" />
     <Compile Include="Assets\Scripts\BearAI.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCollisions.cs" />
+    <Compile Include="Assets\Scripts\Player\PlayerDamage.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
     <Compile Include="Assets\Scripts\ReverseAnimationClip.cs" />

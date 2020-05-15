@@ -12,6 +12,7 @@ TagManager:
   - PettingAndExploring
   - Chasing
   - BearExploring
+  - Water
   layers:
   - Default
   - TransparentFX

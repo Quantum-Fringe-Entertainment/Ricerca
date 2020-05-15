@@ -5,6 +5,7 @@ public class GameTriggers
     public const string StopAvalanche = "Stop Avalanche";
     public const string Ghat = "Ghat";
     public const string Rocks = "Rocks";
+    public const string Water = "Water";
     
 
     public class CutScenes
