@@ -23,10 +23,6 @@ public class PlayerCollisions : MonoBehaviour
             pettingAndExploringScene.Play();
             other.gameObject.SetActive(false);
         }
-        if (other.tag == GameTriggers.CutScenes.Chasing)
-        {
-            enableChase = true;
-        }
 
         if (other.tag == GameTriggers.CutScenes.BearExploring)
         { 
@@ -36,9 +32,4 @@ public class PlayerCollisions : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        if(enableChase)
-            gameObject.GetComponent<PlayerState>().currentPlayerState = GetPlayerState.isBeingChased;
-    }
 }

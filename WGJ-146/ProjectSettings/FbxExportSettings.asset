@@ -26,7 +26,7 @@
             "animatedSkinnedMesh": false,
             "mayaCompatibleNaming": true,
             "include": 0,
-            "lodLevel": 0,
+            "lodLevel": 1,
             "objectPosition": 0,
             "exportUnrendered": true
         },
