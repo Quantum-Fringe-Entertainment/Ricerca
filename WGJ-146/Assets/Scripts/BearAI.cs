@@ -13,7 +13,9 @@ public class BearAI : MonoBehaviour
     private Transform _Player;
     private Animator _bearAC;
     public PlayableDirector chaseSequence;
-    public float minChaseDistance = 5f;
+    public float minChaseDistance = 6f;
+    public float minVelIncDist = 3f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,10 @@ public class BearAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        //Check the disntance between player and the bear
+        //print("The distance is : " + Mathf.RoundToInt(Vector3.Distance(_Player.position, transform.position)));
+
         if(_Player.GetComponent<PlayerState>().currentPlayerState == GetPlayerState.isBeingChased)
         {
             _bearAgent.SetDestination(_Player.position);
@@ -41,8 +47,11 @@ public class BearAI : MonoBehaviour
         if (Vector3.Distance(_Player.position,transform.position) < minChaseDistance)
         {
             chaseSequence.Play();
-
         }
 
+        if (Vector3.Distance(_Player.position, transform.position) < minVelIncDist)
+        {
+            _bearAgent.speed = 3.5f;
+        }
     }
 }

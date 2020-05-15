@@ -17,7 +17,11 @@ public class PlayerCollisions : MonoBehaviour
         if (other.tag == GameTriggers.StopAvalanche)
             spawnner.spawnAvalanche = false;
         if (other.tag == GameTriggers.Rocks)
+        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            gameObject.GetComponent<PlayerState>().currentPlayerState = GetPlayerState.isDead;
+
+        }
         if (other.tag == GameTriggers.CutScenes.PettingAndExploring)
         {
             pettingAndExploringScene.Play();
@@ -30,6 +34,11 @@ public class PlayerCollisions : MonoBehaviour
             bearExploringScene.Play();
         }
 
+        if(other.tag == Characters.Bear)
+        {
+            //reload the scene from the checkpoint
+            gameObject.GetComponent<PlayerState>().currentPlayerState = GetPlayerState.isDead;
+        }
     }
 
 }

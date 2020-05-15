@@ -47,4 +47,5 @@ public class UIReferences
 public class Characters
 {
     public const string Player = "Player";
+    public const string Bear = "Bear";
 }

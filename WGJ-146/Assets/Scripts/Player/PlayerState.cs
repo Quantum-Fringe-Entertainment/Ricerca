@@ -102,7 +102,6 @@ public class PlayerState : MonoBehaviour
         x = Input.GetAxis(Axis.Horizontal);
         z = Input.GetAxis(Axis.Vertical);
 
-        print(enablePlayerInput);
         CheckPlayerStatus();
         SetPlayerAnimations();
 
