@@ -1,13 +1,13 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerState.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerCollisions.cs">
     <Files>
-      <File FileName="Assets/Scripts/Tag Holder.cs" Line="31" Column="25" IsPinned="True" />
-      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" />
-      <File FileName="Assets/Scripts/Player/PlayerState.cs" Line="104" Column="186" />
-      <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" />
-      <File FileName="Assets/Scripts/Seagull.cs" />
-      <File FileName="Assets/Scripts/ReverseAnimationClip.cs" />
-      <File FileName="Assets/Scripts/BearAI.cs" />
+      <File FileName="Assets/Scripts/Tag Holder.cs" Line="14" Column="59" IsPinned="True" />
+      <File FileName="Assets/Scripts/Player/PlayerState.cs" Line="95" Column="31" />
+      <File FileName="Assets/Scripts/Seagull.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/ReverseAnimationClip.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BearAI.cs" Line="40" Column="1" />
+      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="52" Column="76" NotebookId="1" />
+      <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" Line="11" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,7 +16,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Player" expanded="True">
-                  <Node name="PlayerState.cs" selected="True" />
+                  <Node name="PlayerCollisions.cs" selected="True" />
                 </Node>
               </Node>
             </Node>
@@ -27,7 +27,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="de5eb68a-6d90-4f0f-9496-062493dc441d" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9e069102-97f9-4ff7-837f-281796f0955e" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

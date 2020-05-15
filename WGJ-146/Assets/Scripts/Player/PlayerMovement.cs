@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Cinemachine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public float jumpSpeed = 3f;
     public float gravityRelaxation = 0.6f;
     public Camera cam;
+    public CinemachineFreeLook mainPlayerCamera;
+
 
 
     [HideInInspector] private CharacterController _charController;
@@ -37,6 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
         GetPlayerDirection();
         JumpAndGravity();
+        DisableCamControl();
 
         _charController.Move(moveDirection);
 
@@ -47,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     void GetPlayerDirection()
     {
         moveDirection = cam.transform.right * x + cam.transform.forward * z;
-        if (moveDirection != Vector3.zero && (playerState.currentPlayerState == GetPlayerState.isWalking || playerState.currentPlayerState == GetPlayerState.isBeingChased))
+        if (moveDirection != Vector3.zero && (playerState.enablePlayerInput))
         {
             //Player Rotation
             Quaternion rotDir = Quaternion.LookRotation(moveDirection);
@@ -62,6 +64,22 @@ public class PlayerMovement : MonoBehaviour
         else
             moveDirection = Vector3.zero;
 
+    }
+
+    void DisableCamControl()
+    {
+        if (!playerState.enablePlayerInput)
+        {
+            //mainPlayerCamera.m_XAxis.Value = 0f;
+            //mainPlayerCamera.m_YAxis.Value = 0f;
+            mainPlayerCamera.m_YAxis.m_InputAxisName = "";
+            mainPlayerCamera.m_XAxis.m_InputAxisName = "";
+        }
+        else
+        {
+            mainPlayerCamera.m_YAxis.m_InputAxisName = "Mouse Y";
+            mainPlayerCamera.m_XAxis.m_InputAxisName = "Mouse X";
+        }
     }
 
     void JumpAndGravity()

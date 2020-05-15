@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Playables;
 
@@ -8,13 +6,15 @@ public class PlayerCollisions : MonoBehaviour
 {
     public AvalancheSpawnner spawnner;
     public PlayableDirector pettingAndExploringScene;
-    private bool enableChase;
+    public PlayableDirector bearExploringScene;
+    public bool enableChase;
+
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == GameTriggers.Avalanche)
             spawnner.spawnAvalanche = true;
-        if(other.tag == GameTriggers.StopAvalanche)
+        if (other.tag == GameTriggers.StopAvalanche)
             spawnner.spawnAvalanche = false;
         if (other.tag == GameTriggers.Rocks)
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -23,10 +23,17 @@ public class PlayerCollisions : MonoBehaviour
             pettingAndExploringScene.Play();
             other.gameObject.SetActive(false);
         }
-        if (other.tag == GameTriggers.Chasing)
+        if (other.tag == GameTriggers.CutScenes.Chasing)
         {
             enableChase = true;
         }
+
+        if (other.tag == GameTriggers.CutScenes.BearExploring)
+        { 
+            gameObject.GetComponent<PlayerState>().currentPlayerState = GetPlayerState.isExploring;
+            bearExploringScene.Play();
+        }
+
     }
 
     private void Update()

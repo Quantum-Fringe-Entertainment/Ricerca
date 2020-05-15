@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Playables;
-using Cinemachine;
 
 
 [HideInInspector]
@@ -14,23 +11,28 @@ using Cinemachine;
     isJumping,
     isGrabbingLedge,
     isDead,
+    #region Never change these 2 States
     isStumbling,
     isStandingUp,
-    isPettingAndExploring,
-    isBeingChased
+    #endregion
+    isExploring,
+    isBeingChased// this is same as "isSprinting" param in AC parameters for the player
 }
+
 
 public class PlayerState : MonoBehaviour
 {
-    private Animator m_playerAnim;
     public PlayableDirector stumbleScene;
     public GetPlayerState currentPlayerState;
     public Transform stumbleCheckPoint;
     public float stumbleRayLength = 2f;
-    public CinemachineFreeLook mainPlayerCamera;
 
+    [HideInInspector] public bool enablePlayerInput = true;
+
+    private Animator m_playerAnim;
     private float x;
     private float z;
+    private bool enableChase;
 
     void Start()
     {
@@ -78,9 +80,20 @@ public class PlayerState : MonoBehaviour
         currentPlayerState = GetPlayerState.isIdle;
     }
 
-    public void PettingAndExploring()
+    public void PlayerisExploring()
     {
-        currentPlayerState = GetPlayerState.isPettingAndExploring;
+        currentPlayerState = GetPlayerState.isExploring;
+    }
+
+    public void MakePlayerAnimationIdle()
+    {
+        m_playerAnim.SetBool(PlayerAC_Parameters.isSprinting, false);
+        m_playerAnim.SetBool(PlayerAC_Parameters.isWalking, false);
+    }
+
+    public void BeingChased()
+    {
+        enableChase = true;
     }
 
     private void Update()
@@ -89,21 +102,38 @@ public class PlayerState : MonoBehaviour
         x = Input.GetAxis(Axis.Horizontal);
         z = Input.GetAxis(Axis.Vertical);
 
-        print(currentPlayerState);
-
+        print(enablePlayerInput);
+        CheckPlayerStatus();
         SetPlayerAnimations();
-        DisableCamControl();
+
+
+        if (enableChase)
+            currentPlayerState = GetPlayerState.isBeingChased;
+    }
+
+    void CheckPlayerStatus()
+    {
+        if ((currentPlayerState != GetPlayerState.isStumbling)
+            && (currentPlayerState != GetPlayerState.isStandingUp)
+            && (currentPlayerState != GetPlayerState.isExploring))
+        {
+            enablePlayerInput = true;
+        }
+        else if ((currentPlayerState == GetPlayerState.isStumbling)
+                 || (currentPlayerState == GetPlayerState.isStandingUp)
+                 || (currentPlayerState == GetPlayerState.isExploring))
+             {
+                enablePlayerInput = false;
+                MakePlayerAnimationIdle();
+             }
 
     }
 
-
     void SetPlayerAnimations()
     {
-        if(currentPlayerState != GetPlayerState.isBeingChased)
+        if(currentPlayerState != GetPlayerState.isBeingChased && enablePlayerInput)
         {
             StopSprinting();
-            if ((currentPlayerState != GetPlayerState.isStumbling) && (currentPlayerState != GetPlayerState.isStandingUp) && (currentPlayerState != GetPlayerState.isPettingAndExploring))
-            {
 
                 if (x > 0 || x < 0 || z > 0 || z < 0)
                 {
@@ -113,13 +143,10 @@ public class PlayerState : MonoBehaviour
                 {
                     StopWalking();
                 }
-            }
         }
-        else if (currentPlayerState == GetPlayerState.isBeingChased)
+        else if (currentPlayerState == GetPlayerState.isBeingChased && enablePlayerInput)
         {
             StopWalking();
-            if ((currentPlayerState != GetPlayerState.isStumbling) && (currentPlayerState != GetPlayerState.isStandingUp) && (currentPlayerState != GetPlayerState.isPettingAndExploring))
-            {
 
                 if (x > 0 || x < 0 || z > 0 || z < 0)
                 {
@@ -129,7 +156,6 @@ public class PlayerState : MonoBehaviour
                 {
                     StopSprinting();
                 }
-            }
         }
        
 
@@ -167,18 +193,6 @@ public class PlayerState : MonoBehaviour
         }
     }
 
-    void DisableCamControl()
-    {
-        if (( currentPlayerState == GetPlayerState.isStumbling) || ( currentPlayerState == GetPlayerState.isStandingUp) || (currentPlayerState == GetPlayerState.isPettingAndExploring))
-        {
-            mainPlayerCamera.m_YAxis.m_InputAxisName = "";
-            mainPlayerCamera.m_XAxis.m_InputAxisName = "";
-        }
-        else
-        {
-            mainPlayerCamera.m_YAxis.m_InputAxisName = "Mouse Y";
-            mainPlayerCamera.m_XAxis.m_InputAxisName = "Mouse X";
-        }
-    }
+    
 
 }

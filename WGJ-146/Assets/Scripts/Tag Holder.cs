@@ -1,18 +1,17 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿
 public class GameTriggers
 {
     public const string Avalanche = "Avalanche";
     public const string StopAvalanche = "Stop Avalanche";
     public const string Ghat = "Ghat";
     public const string Rocks = "Rocks";
-    public const string Chasing = "Chasing";
+    
 
     public class CutScenes
     {
         public const string PettingAndExploring = "PettingAndExploring";
+        public const string Chasing = "Chasing";
+        public const string BearExploring = "BearExploring";
 
     }
 }
