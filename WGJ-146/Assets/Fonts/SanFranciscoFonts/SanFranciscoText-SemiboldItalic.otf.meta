@@ -1,0 +1,27 @@
+fileFormatVersion: 2
+guid: 48e0c3c7a4e324e8a88fce121276ec99
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: San Francisco Text
+  fontNames:
+  - San Francisco Text
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 38127b950da8f40758b0bd4659d4a2c4, type: 3}
+  - {fileID: 12800000, guid: c4c07ff6199b342919566e72aae61ba4, type: 3}
+  - {fileID: 12800000, guid: 34b742390ef1e47b9b6023a316cfbd32, type: 3}
+  - {fileID: 12800000, guid: d331598b4c5a840aa9f8fbdc96cb168a, type: 3}
+  - {fileID: 12800000, guid: b46e380fa89d34e96b81a54bf7639f2a, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

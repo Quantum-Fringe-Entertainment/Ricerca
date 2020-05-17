@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: e796b31b8606b4fbb882143c7c0b9bb2
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: San Francisco Display
+  fontNames:
+  - San Francisco Display
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d13466a160e0641069e7337bd9af79e0, type: 3}
+  - {fileID: 12800000, guid: 55a1ceb8a81ab4a028a6d67cfaf1dc3b, type: 3}
+  - {fileID: 12800000, guid: d7ee123991ff1479cb650c84a89d0bec, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

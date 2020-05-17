@@ -19,6 +19,7 @@ MonoBehaviour:
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":100.0}'
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":2573.0}'
 =======
   - '{"m_Value":664.7328491210938,"m_LowValue":0.0,"m_HighValue":2573.0}'
@@ -26,3 +27,6 @@ MonoBehaviour:
 =======
   - '{"m_Value":1958.786376953125,"m_LowValue":0.0,"m_HighValue":2573.0}'
 >>>>>>> PV2
+=======
+  - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":170.0}'
+>>>>>>> PV6

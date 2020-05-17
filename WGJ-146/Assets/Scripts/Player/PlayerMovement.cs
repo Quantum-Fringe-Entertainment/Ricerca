@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Cinemachine;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -8,31 +7,49 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpSpeed = 3f;
     public float gravityRelaxation = 0.6f;
-    private Vector3 moveDirection = Vector3.zero;
+    public Camera cam;
+    public CinemachineFreeLook mainPlayerCamera;
+
+
 
     [HideInInspector] private CharacterController _charController;
-    [HideInInspector] private Animator _playerAnim;
-    public Camera cam;
-
+    [HideInInspector] private PlayerState playerState;
+    private Vector3 moveDirection = Vector3.zero;
     private float t = 1f;
     private bool jumpMaar = false;
+    private float x;
+    private float z;
 
 
     
     void Start()
     {
         _charController = GetComponent<CharacterController>();
-        _playerAnim = GetComponent<Animator>();
+        playerState = GetComponent<PlayerState>();
         Cursor.visible = false;
     }//Start
 
     private void Update()
     {
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+         x = Input.GetAxis(Axis.Horizontal);
+         z = Input.GetAxis(Axis.Vertical);
 
+
+
+        GetPlayerDirection();
+        JumpAndGravity();
+        DisableCamControl();
+
+        _charController.Move(moveDirection);
+
+
+    }//Update
+
+
+    void GetPlayerDirection()
+    {
         moveDirection = cam.transform.right * x + cam.transform.forward * z;
-        if (moveDirection != Vector3.zero)
+        if (moveDirection != Vector3.zero && (playerState.enablePlayerInput))
         {
             //Player Rotation
             Quaternion rotDir = Quaternion.LookRotation(moveDirection);
@@ -44,8 +61,30 @@ public class PlayerMovement : MonoBehaviour
             moveDirection = transform.forward * moveSpeed * Time.deltaTime;
 
         }
+        else
+            moveDirection = Vector3.zero;
 
-        if (Input.GetButtonDown("Jump") && _charController.isGrounded)
+    }
+
+    void DisableCamControl()
+    {
+        if (!playerState.enablePlayerInput)
+        {
+            //mainPlayerCamera.m_XAxis.Value = 0f;
+            //mainPlayerCamera.m_YAxis.Value = 0f;
+            mainPlayerCamera.m_YAxis.m_InputAxisName = "";
+            mainPlayerCamera.m_XAxis.m_InputAxisName = "";
+        }
+        else
+        {
+            mainPlayerCamera.m_YAxis.m_InputAxisName = "Mouse Y";
+            mainPlayerCamera.m_XAxis.m_InputAxisName = "Mouse X";
+        }
+    }
+
+    void JumpAndGravity()
+    {
+        if (Input.GetButtonDown(Axis.Jump) && _charController.isGrounded)
         {
             //moveDirection.y -= Physics.gravity.y * Time.deltaTime * jumpSpeed;
             jumpMaar = true;
@@ -57,16 +96,6 @@ public class PlayerMovement : MonoBehaviour
             moveDirection.y += Physics.gravity.y * Time.deltaTime * gravityRelaxation;
         }
 
-
-        if (x > 0 || x < 0 || z > 0 || z < 0)
-        {
-            _playerAnim.SetBool("isWalking", true);
-        }
-        else
-        {
-            _playerAnim.SetBool("isWalking", false);
-        }
-
         if (jumpMaar && t <= 0.08)
         {
             moveDirection.y = Mathf.Lerp(moveDirection.y, -Physics.gravity.y * 0.1f, t);
@@ -74,14 +103,7 @@ public class PlayerMovement : MonoBehaviour
             t += 0.15f * Time.deltaTime;
 
         }
+    }
 
-        //print(moveDirection);
-        _charController.Move(moveDirection);
-
-
-    }//Update
-
-
-   
 
 }//class PlayerMovement
