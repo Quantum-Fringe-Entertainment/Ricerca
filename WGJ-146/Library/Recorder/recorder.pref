@@ -36,14 +36,14 @@ MonoBehaviour:
   m_Name: Animation Clip
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 2
+  take: 4
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
       m_Root: 1
       m_Leaf: Recordings
       m_ForceAssetFolder: 1
-    m_FileName: animation_<GameObject>_<Take>
+    m_FileName: Father Straight Walk
   m_AnimationInputSettings:
     m_BindingId: f30174fce14b74884bf036b008a1aff1
     recursive: 1
