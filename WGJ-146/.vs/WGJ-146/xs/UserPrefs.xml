@@ -2,8 +2,7 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/TestingMechanics.cs">
     <Files>
       <File FileName="Assets/Scripts/Player/PlayerSliding.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="18" Column="35" />
-      <File FileName="Assets/TestingMechanics.cs" Line="24" Column="8" />
+      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" />
       <File FileName="Assets/Scripts/TestingMechanics.cs" Line="22" Column="13" />
     </Files>
     <Pads>
@@ -23,7 +22,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2cf1cea7-ef3b-4e98-b242-e5a17d6d9bad" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="71afeb29-a1ba-4f94-bf77-449c68bc264b" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -5,22 +5,37 @@ using UnityEngine;
 public class TestingMechanics : MonoBehaviour
 {
     [Header("Ledge Testing")]
-    public bool LedgeMechanic;
+    public bool LedgeMechanic = false;
     public Transform LedgeTest;
     [Space]
     [Header("Spike Testing")]
-    public bool SpikeMechanic;
+    public bool SpikeMechanic = false;
     public Transform SpikeTest;
 
-    public void Awake()
+
+    public bool SetLocation = false;
+
+    
+    public void Update()
     {
-        if (LedgeMechanic == true) {
-            transform.position = LedgeTest.position;
-        }
-        if (SpikeTest == true)
+        if (SetLocation == false)
         {
-            transform.position = SpikeTest.position;
+            if (LedgeMechanic == true)
+            {
+                this.transform.position = LedgeTest.position;
+                SetLocation = true;
+            }
+            if (SpikeTest == true)
+            {
+                this.transform.position = SpikeTest.position;
+                SetLocation = true;
+            }
+
+            else
+            {
+                return;
+            }
+
         }
-       
     }
 }
