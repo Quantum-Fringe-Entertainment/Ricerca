@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Global Settings
   m_EditorClassIdentifier: 
   m_RecordMode: 0
-  m_FrameRatePlayback: 0
+  m_FrameRatePlayback: 1
   m_FrameRateType: 7
   m_CustomFrameRateValue: 30
   m_StartFrame: 0
@@ -36,14 +36,14 @@ MonoBehaviour:
   m_Name: Animation Clip
   m_EditorClassIdentifier: 
   enabled: 1
-  take: 4
+  take: 9
   captureEveryNthFrame: 1
   fileNameGenerator:
     m_Path:
       m_Root: 1
       m_Leaf: Recordings
       m_ForceAssetFolder: 1
-    m_FileName: Father Straight Walk
+    m_FileName: Father Straight Walk 2
   m_AnimationInputSettings:
     m_BindingId: f30174fce14b74884bf036b008a1aff1
     recursive: 1
