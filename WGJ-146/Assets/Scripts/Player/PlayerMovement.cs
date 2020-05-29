@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     
     void Start()
     {
+        Application.targetFrameRate = 300;
         _charController = GetComponent<CharacterController>();
         playerState = GetComponent<PlayerState>();
         Cursor.visible = false;
