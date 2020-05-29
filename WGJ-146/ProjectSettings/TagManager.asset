@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Avalanche
+  - Spike
+  - SpikeCollection
+  - Entry
+  - Exit
+  - Ramp
+  - ramp1
+  - ramp2
+  - ledgewall
   layers:
   - Default
   - TransparentFX
