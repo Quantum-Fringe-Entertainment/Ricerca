@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/PlayerSliding.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Player/LedgeMovement.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player/PlayerSliding.cs" Line="9" Column="63" />
+      <File FileName="Assets/Scripts/Player/PlayerSliding.cs" Line="133" Column="1" />
       <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/TestingMechanics.cs" Line="16" Column="37" />
-      <File FileName="Assets/LedgeMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Player/LedgeMovement.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,7 +13,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Player" expanded="True">
-                  <Node name="PlayerSliding.cs" selected="True" />
+                  <Node name="LedgeMovement.cs" selected="True" />
                 </Node>
               </Node>
             </Node>

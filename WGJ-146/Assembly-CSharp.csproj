@@ -63,7 +63,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\LedgeMovement.cs" />
     <Compile Include="Assets\SAFullBodyIK-master\Extensions\Scripts\FullBodyIKUnityChan.cs" />
     <Compile Include="Assets\SAFullBodyIK-master\Extensions\Scripts\FullBodyIKUnityChanBehaviour.cs" />
     <Compile Include="Assets\SAFullBodyIK-master\Scripts\FullBodyIK.cs" />
@@ -81,6 +80,7 @@
     <Compile Include="Assets\Scripts\AvalancheSpawnner.cs" />
     <Compile Include="Assets\Scripts\Ice Spike\RampDetection.cs" />
     <Compile Include="Assets\Scripts\Ice Spike\SpikePool.cs" />
+    <Compile Include="Assets\Scripts\Player\LedgeMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCollisions.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerSliding.cs" />
