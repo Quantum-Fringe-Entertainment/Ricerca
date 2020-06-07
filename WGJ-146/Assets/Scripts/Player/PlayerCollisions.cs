@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Playables;
+using UnityEngine.Video;
 
 public class PlayerCollisions : MonoBehaviour
 {
@@ -8,7 +9,8 @@ public class PlayerCollisions : MonoBehaviour
     public PlayableDirector pettingAndExploringScene;
     public PlayableDirector bearExploringScene;
     public bool enableChase;
-
+    public GameObject rendetTex;
+    public VideoPlayer cavefallSeq;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -38,6 +40,15 @@ public class PlayerCollisions : MonoBehaviour
         {
             //reload the scene from the checkpoint
             gameObject.GetComponent<PlayerState>().currentPlayerState = GetPlayerState.isDead;
+        }
+
+        if(other.tag == GameTriggers.CutScenes.CaveFall)
+        {
+            rendetTex.SetActive(true);
+            GetComponent<PlayerState>().PlayerisExploring();
+            GetComponent<PlayerState>().enablePlayerInput = false;
+            cavefallSeq.Play();
+            print("Started playing fall sequnce");
         }
     }
 

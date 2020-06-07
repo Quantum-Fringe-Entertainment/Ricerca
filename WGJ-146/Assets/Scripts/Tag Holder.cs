@@ -13,6 +13,7 @@ public class GameTriggers
         public const string PettingAndExploring = "PettingAndExploring";
         public const string Chasing = "Chasing";
         public const string BearExploring = "BearExploring";
+        public const string CaveFall = "CaveFall";
 
     }
 }

@@ -46,6 +46,7 @@ public class PlayerState : MonoBehaviour
         currentPlayerState = GetPlayerState.isWalking;
     }
 
+
     public void StopWalking()
     {
         m_playerAnim.SetBool(PlayerAC_Parameters.isWalking, false);

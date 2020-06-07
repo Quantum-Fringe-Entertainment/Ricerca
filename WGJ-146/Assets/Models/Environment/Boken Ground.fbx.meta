@@ -3,7 +3,12 @@ guid: dda8568c77ed94691bb6032d06e1842a
 ModelImporter:
   serializedVersion: 19300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Too_much_snow
+    second: {fileID: 2100000, guid: 108cf3d1d2ec44585bc18979a5541d11, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
