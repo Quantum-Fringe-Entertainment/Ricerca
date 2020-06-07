@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\Player\PlayerState.cs" />
     <Compile Include="Assets\Scripts\ReverseAnimationClip.cs" />
     <Compile Include="Assets\Scripts\Rocks.cs" />
+    <Compile Include="Assets\Scripts\SFXManager.cs" />
     <Compile Include="Assets\Scripts\Seagull.cs" />
     <Compile Include="Assets\Scripts\Tag Holder.cs" />
     <Compile Include="Assets\[Imported Assets]\Low Poly Animated Animals\- Scripts\AnimationControl.cs" />
@@ -833,56 +834,83 @@
     <Reference Include="mscorlib">
       <HintPath>/Applications/Unity/Hub/Editor/2019.3.12f1/Unity.app/Contents/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.RenderPipeline.Universal.ShaderLibrary">
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Cinemachine">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Shaders">
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Formats.Fbx.Editor">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Formats.Fbx.Editor.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Formats.Fbx.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Editor">
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder.Editor">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Recorder.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Recorder">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Recorder.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Runtime">
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Universal.Editor">
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Editor">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Autodesk.Fbx">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Autodesk.Fbx.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Autodesk.Fbx.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.cinemachine.editor">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ShaderGraph.Editor">
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.ShaderGraph.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Formats.Fbx.Runtime">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Formats.Fbx.Runtime.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/Unity.Formats.Fbx.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff Desktop/Unity Projects/Game Jams/WGJ/Ricerca/WGJ-146/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>/Users/phanisrikar/Desktop/Unity Stuff/Projects/Ricerca/WGJ-146/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
