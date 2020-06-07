@@ -10,7 +10,11 @@ public class PlayerMovement : MonoBehaviour
     public Camera cam;
     public CinemachineFreeLook mainPlayerCamera;
 
-
+    [Space]
+    [Header("Audio Settings")]
+    public AudioClip[] walkClips;
+    public AudioSource walkSource;
+    public float playSpeed = 1.6f;
 
     [HideInInspector] private CharacterController _charController;
     [HideInInspector] private PlayerState playerState;
@@ -19,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private bool jumpMaar = false;
     private float x;
     private float z;
-
+    private float currentPlayTime;
 
     
     void Start()
@@ -28,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
         _charController = GetComponent<CharacterController>();
         playerState = GetComponent<PlayerState>();
         Cursor.visible = false;
+        walkSource = GetComponent<AudioSource>();
+        walkSource.clip = walkClips[Random.Range(0, walkClips.Length)];
     }//Start
 
     private void Update()
@@ -43,6 +49,11 @@ public class PlayerMovement : MonoBehaviour
 
         _charController.Move(moveDirection);
 
+        if (playerState.currentPlayerState == GetPlayerState.isWalking
+            || playerState.currentPlayerState == GetPlayerState.isRunning)
+            PlayFootSteps();
+        else
+            walkSource.Stop();
 
     }//Update
 
@@ -70,9 +81,7 @@ public class PlayerMovement : MonoBehaviour
     void DisableCamControl()
     {
         if (!playerState.enablePlayerInput)
-        {
-            //mainPlayerCamera.m_XAxis.Value = 0f;
-            //mainPlayerCamera.m_YAxis.Value = 0f;
+        {    
             mainPlayerCamera.m_YAxis.m_InputAxisName = "";
             mainPlayerCamera.m_XAxis.m_InputAxisName = "";
         }
@@ -106,5 +115,14 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
+    private void PlayFootSteps()
+    {
+        if(currentPlayTime > walkSource.clip.length * playSpeed && !walkSource.isPlaying)
+        {
+            walkSource.clip = walkClips[Random.Range(0, walkClips.Length)];
+            walkSource.Play();
+            currentPlayTime = 0f;
+        }
+        currentPlayTime += Time.deltaTime;
+    }
 }//class PlayerMovement
