@@ -192,7 +192,4 @@ public class PlayerState : MonoBehaviour
             }
         }
     }
-
-    
-
 }

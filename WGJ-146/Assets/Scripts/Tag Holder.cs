@@ -50,3 +50,9 @@ public class Characters
     public const string Player = "Player";
     public const string Bear = "Bear";
 }
+
+public class SFX
+{
+    public const string breaking = "breaking";
+    public const string falling = "falling";
+}

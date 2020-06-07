@@ -7,11 +7,17 @@ public class Rocks : MonoBehaviour
     public GameObject snowDestroyVFX;
     public GameObject brokenVariant;
     public float destructionForce = 2f;
+    public GameObject breaking;
 
+    private void Start()
+    {
+        breaking = GameObject.FindGameObjectWithTag(SFX.breaking);
+    }
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.collider.tag == GameTriggers.Ghat)
         {
+            breaking.GetComponent<AudioSource>().Play();
             GameObject snowfx = Instantiate(snowDestroyVFX, gameObject.transform.position, snowDestroyVFX.transform.rotation);
             GameObject debrisObj = Instantiate(brokenVariant, gameObject.transform.position, brokenVariant.transform.rotation);
             foreach (Rigidbody debrisRB in debrisObj.GetComponentsInChildren<Rigidbody>())

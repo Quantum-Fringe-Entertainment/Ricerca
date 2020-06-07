@@ -14,7 +14,7 @@ public class SFXManager : MonoBehaviour
 
     IEnumerator playBGM()
     {
-        yield return new WaitForSeconds(15f);
+        yield return new WaitForSeconds(30f);
         bgmSFX.SetActive(true);
     }
    
