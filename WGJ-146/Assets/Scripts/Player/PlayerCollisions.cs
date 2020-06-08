@@ -2,6 +2,7 @@
 using UnityEngine.SceneManagement;
 using UnityEngine.Playables;
 using UnityEngine.Video;
+using System.Collections;
 
 public class PlayerCollisions : MonoBehaviour
 {
@@ -49,7 +50,14 @@ public class PlayerCollisions : MonoBehaviour
             GetComponent<PlayerState>().enablePlayerInput = false;
             cavefallSeq.Play();
             print("Started playing fall sequnce");
+            StartCoroutine(LevelUp());
         }
+    }
+
+    IEnumerator LevelUp()
+    {
+        yield return new WaitForSeconds((float)cavefallSeq.length + 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }

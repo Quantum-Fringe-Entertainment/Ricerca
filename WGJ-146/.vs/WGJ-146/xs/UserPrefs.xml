@@ -2,20 +2,20 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SFXManager.cs">
     <Files>
       <File FileName="Assets/Scripts/Tag Holder.cs" Line="57" Column="45" IsPinned="True" />
-      <File FileName="Assets/Scripts/Player/PlayerState.cs" Line="194" Column="6" />
-      <File FileName="Assets/Scripts/ReverseAnimationClip.cs" Line="75" Column="1" />
-      <File FileName="Assets/Scripts/BearAI.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Player/PlayerDamage.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Rocks.cs" Line="5" Column="1" />
-      <File FileName="Assets/Scripts/AvalancheSpawnner.cs" Line="45" Column="58" />
+      <File FileName="Assets/Scripts/Player/PlayerState.cs" Line="16" Column="18" />
+      <File FileName="Assets/Scripts/ReverseAnimationClip.cs" />
+      <File FileName="Assets/Scripts/BearAI.cs" Line="37" Column="1" />
+      <File FileName="Assets/Scripts/Player/PlayerDamage.cs" />
+      <File FileName="Assets/Scripts/Rocks.cs" />
+      <File FileName="Assets/Scripts/AvalancheSpawnner.cs" />
       <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="129" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" Line="1" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/SFXManager.cs" Line="17" Column="43" NotebookId="1" />
+      <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" Line="53" Column="39" NotebookId="1" />
+      <File FileName="Assets/Scripts/SFXManager.cs" Line="9" Column="42" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7e8ce97d-4cc7-43ad-8818-bc88fd3b5159" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="103a5a23-967e-493a-924a-06c853044650" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
