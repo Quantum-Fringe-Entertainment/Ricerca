@@ -31,7 +31,6 @@ public class PlayerMovement : MonoBehaviour
         Application.targetFrameRate = 300;
         _charController = GetComponent<CharacterController>();
         playerState = GetComponent<PlayerState>();
-        Cursor.visible = false;
         walkSource = GetComponent<AudioSource>();
         walkSource.clip = walkClips[Random.Range(0, walkClips.Length)];
     }//Start

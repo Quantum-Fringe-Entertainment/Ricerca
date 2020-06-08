@@ -37,7 +37,7 @@ public class PlayerState : MonoBehaviour
     void Start()
     {
         m_playerAnim = GetComponent<Animator>();
-        currentPlayerState = GetPlayerState.isIdle;
+        currentPlayerState = GetPlayerState.isStandingUp;
     }
 
     public void StartWalking()
@@ -74,6 +74,8 @@ public class PlayerState : MonoBehaviour
     public void PlayerIsStandingUp()
     {
         currentPlayerState = GetPlayerState.isStandingUp;
+        print("Hello world");
+        m_playerAnim.SetTrigger(PlayerAC_Parameters.standUp);
     }
 
     public void PlayerStoodUp()
@@ -122,10 +124,10 @@ public class PlayerState : MonoBehaviour
         else if ((currentPlayerState == GetPlayerState.isStumbling)
                  || (currentPlayerState == GetPlayerState.isStandingUp)
                  || (currentPlayerState == GetPlayerState.isExploring))
-             {
+                {
                 enablePlayerInput = false;
                 MakePlayerAnimationIdle();
-             }
+                }
 
     }
 

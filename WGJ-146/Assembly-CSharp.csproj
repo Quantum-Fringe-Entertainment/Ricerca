@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\AvalancheSpawnner.cs" />
     <Compile Include="Assets\Scripts\BearAI.cs" />
+    <Compile Include="Assets\Scripts\Player\DialogueSystem.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerCollisions.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerDamage.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
@@ -74,6 +75,8 @@
     <Compile Include="Assets\Scripts\SFXManager.cs" />
     <Compile Include="Assets\Scripts\Seagull.cs" />
     <Compile Include="Assets\Scripts\Tag Holder.cs" />
+    <Compile Include="Assets\Scripts\UI scripts\Dialog.cs" />
+    <Compile Include="Assets\Scripts\UI scripts\PauseMenu.cs" />
     <Compile Include="Assets\[Imported Assets]\Low Poly Animated Animals\- Scripts\AnimationControl.cs" />
     <Compile Include="Assets\[Imported Assets]\Low Poly Animated Animals\- Scripts\DeathButtonControl.cs" />
     <Compile Include="Assets\[Imported Assets]\Low Poly Animated Animals\- Scripts\KillSwitch.cs" />
@@ -142,7 +145,6 @@
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\EdgeDetectNormals 2.shader" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceRaytrace 2.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL 2.txt" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\VignettingShader.shader" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\ColorCorrectionCurves.shader" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\GrayscaleEffect 2.shader" />
@@ -163,7 +165,6 @@
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\MinMaxReduction 2.shader" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\TwirlEffect.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas 2.shader" />
-    <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution 2.txt" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Apply.shader" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11 2.shader" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\Contrast Stretch\Adaptation.shader" />
@@ -171,7 +172,6 @@
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\SSAOShader 2.shader" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\_Antialiasing\FXAA2 2.shader" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\LensFlareCreate.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters 2.txt" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\MotionBlurClear 2.shader" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendForBloom 2.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile 2.shader" />
@@ -251,7 +251,6 @@
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\ChromaticAberrationShader.shader" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\ScreenSpaceAmbientObscurance 2.shader" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrainDX11.shader" />
-    <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters 2.txt" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\_DepthOfField\SeparableWeightedBlurDof34.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties 2.cginc" />
     <None Include="Assets\[Imported Assets]\Low Poly Animated Animals\Standard Assets\Effects\ImageEffects\Shaders\NoiseAndGrain 2.shader" />

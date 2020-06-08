@@ -31,6 +31,7 @@ public class PlayerAC_Parameters
     public const string Stumble = "Stumble";
     public const string SnowBlast = "SnowBlast";
     public const string isSprinting = "isSprinting";
+    public const string standUp = "standUp";
 }
 
 public class AnimalAC_Parameters
