@@ -15,7 +15,7 @@ public class BearAI : MonoBehaviour
     public PlayableDirector chaseSequence;
     public float minChaseDistance = 6f;
     public float minVelIncDist = 3f;
-
+    public CinemachineImpulseSource impulseSource;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +35,6 @@ public class BearAI : MonoBehaviour
         if(_Player.GetComponent<PlayerState>().currentPlayerState == GetPlayerState.isBeingChased)
         {
             _bearAgent.SetDestination(_Player.position);
-
             if (_bearAgent.speed != 0)
                 _bearAC.SetBool(AnimalAC_Parameters.isWalking, true);
             else
@@ -51,6 +50,7 @@ public class BearAI : MonoBehaviour
 
         if (Vector3.Distance(_Player.position, transform.position) < minVelIncDist)
         {
+            impulseSource.GenerateImpulse();
             _bearAgent.speed = 3.5f;
         }
     }

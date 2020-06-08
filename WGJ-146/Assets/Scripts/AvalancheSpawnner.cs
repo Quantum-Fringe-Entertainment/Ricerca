@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class AvalancheSpawnner : MonoBehaviour
 {
     public float heightOffset = 5f;
@@ -14,13 +15,21 @@ public class AvalancheSpawnner : MonoBehaviour
     public GameObject player;
     [Space]
     public bool spawnAvalanche;
+    [Space]
+    public GameObject falling;
 
+    private void Awake()
+    {
+        falling = GameObject.FindGameObjectWithTag(SFX.falling);
+    }
 
     private float t = 0f;
     private void Update()
     {
         if (spawnAvalanche)
         {
+            //if(!falling.GetComponent<AudioSource>().isPlaying)
+            //    falling.GetComponent<AudioSource>().Play();
             Vector3 spawnLocation = player.transform.position + player.transform.forward * Random.Range(spawnDistanceMin, spawnDistanceMax);
             spawnLocation.y = transform.position.y + heightOffset;
 
@@ -32,5 +41,7 @@ public class AvalancheSpawnner : MonoBehaviour
             }
             t += Time.deltaTime;
         }
+        //else
+        //    falling.GetComponent<AudioSource>().Stop();
     }
 }
