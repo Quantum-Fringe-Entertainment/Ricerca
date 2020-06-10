@@ -9,14 +9,17 @@ public class BearAI : MonoBehaviour
 {
 
 
-    private NavMeshAgent _bearAgent;
+    public NavMeshAgent _bearAgent;
     private Transform _Player;
     private Animator _bearAC;
     public PlayableDirector chaseSequence;
     public float minChaseDistance = 6f;
     public float minVelIncDist = 3f;
     public CinemachineImpulseSource impulseSource;
+    public float growlInterval = 2f;
 
+    private float growlTime;
+    private bool didChaseOnce;
     // Start is called before the first frame update
     void Start()
     {
@@ -45,7 +48,17 @@ public class BearAI : MonoBehaviour
 
         if (Vector3.Distance(_Player.position,transform.position) < minChaseDistance)
         {
-            chaseSequence.Play();
+            if (!didChaseOnce)
+            {
+                didChaseOnce = true;
+                chaseSequence.Play();
+                if (growlTime > growlInterval)
+                {
+                    GetComponent<AudioSource>().Play();
+                    growlTime = 0f;
+                }
+                growlTime += Time.deltaTime;
+            }
         }
 
         if (Vector3.Distance(_Player.position, transform.position) < minVelIncDist)

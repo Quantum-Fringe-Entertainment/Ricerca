@@ -1,23 +1,25 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UI scripts/Dialog.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MainMenu.cs">
     <Files>
-      <File FileName="Assets/Scripts/Tag Holder.cs" Line="57" Column="45" IsPinned="True" />
+      <File FileName="Assets/Scripts/Tag Holder.cs" Line="34" Column="32" IsPinned="True" />
       <File FileName="Assets/Scripts/Player/PlayerState.cs" />
       <File FileName="Assets/Scripts/ReverseAnimationClip.cs" />
       <File FileName="Assets/Scripts/BearAI.cs" />
       <File FileName="Assets/Scripts/Player/PlayerDamage.cs" />
       <File FileName="Assets/Scripts/Rocks.cs" />
       <File FileName="Assets/Scripts/AvalancheSpawnner.cs" />
-      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="129" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" NotebookId="1" />
-      <File FileName="Assets/Scripts/SFXManager.cs" Line="9" Column="42" NotebookId="1" />
-      <File FileName="Assets/Scripts/UI scripts/PauseMenu.cs" Line="19" Column="29" NotebookId="1" />
-      <File FileName="Assets/Scripts/UI scripts/Dialog.cs" Line="4" Column="12" NotebookId="1" />
+      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="34" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" Line="59" Column="39" NotebookId="1" />
+      <File FileName="Assets/Scripts/SFXManager.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/UI scripts/PauseMenu.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/UI scripts/Dialog.cs" NotebookId="1" />
+      <File FileName="Assets/CreditsManager.cs" Line="17" Column="6" NotebookId="1" />
+      <File FileName="Assets/MainMenu.cs" Line="13" Column="5" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0a2e7313-8791-42e2-abe6-afaf15269963" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e2f76dbe-5cd8-4b25-96cf-01e02f2879e0" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
