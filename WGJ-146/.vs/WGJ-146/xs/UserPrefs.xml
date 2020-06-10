@@ -1,20 +1,21 @@
 ﻿<Properties StartupConfiguration="{864886A1-6679-790E-754A-5DDCF294FA47}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MainMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/CMFreelookTouchInput.cs">
     <Files>
       <File FileName="Assets/Scripts/Tag Holder.cs" Line="34" Column="32" IsPinned="True" />
-      <File FileName="Assets/Scripts/Player/PlayerState.cs" />
+      <File FileName="Assets/Scripts/Player/PlayerState.cs" Line="33" Column="40" />
       <File FileName="Assets/Scripts/ReverseAnimationClip.cs" />
       <File FileName="Assets/Scripts/BearAI.cs" />
       <File FileName="Assets/Scripts/Player/PlayerDamage.cs" />
       <File FileName="Assets/Scripts/Rocks.cs" />
       <File FileName="Assets/Scripts/AvalancheSpawnner.cs" />
-      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="34" Column="1" NotebookId="1" />
-      <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" Line="59" Column="39" NotebookId="1" />
-      <File FileName="Assets/Scripts/SFXManager.cs" NotebookId="1" />
+      <File FileName="Assets/Scripts/Player/PlayerMovement.cs" Line="52" Column="62" NotebookId="1" />
+      <File FileName="Assets/Scripts/Player/PlayerCollisions.cs" Line="73" Column="1" NotebookId="1" />
+      <File FileName="Assets/Scripts/SFXManager.cs" Line="1" Column="1" NotebookId="1" />
       <File FileName="Assets/Scripts/UI scripts/PauseMenu.cs" NotebookId="1" />
-      <File FileName="Assets/Scripts/UI scripts/Dialog.cs" NotebookId="1" />
-      <File FileName="Assets/CreditsManager.cs" Line="17" Column="6" NotebookId="1" />
-      <File FileName="Assets/MainMenu.cs" Line="13" Column="5" NotebookId="1" />
+      <File FileName="Assets/Scripts/UI scripts/Dialog.cs" Line="64" Column="23" NotebookId="1" />
+      <File FileName="Assets/CreditsManager.cs" Line="11" Column="1" NotebookId="1" />
+      <File FileName="Assets/MainMenu.cs" Line="19" Column="1" NotebookId="1" />
+      <File FileName="Assets/CMFreelookTouchInput.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

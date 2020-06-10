@@ -16,6 +16,9 @@ public class Dialog : MonoBehaviour
     public GameObject cutsceneStand;
     public CinemachineVirtualCamera VirtualCamera;
     public PlayerState playerState;
+
+    [Space]
+    public GameObject movementJS;
     private void Start()
     {
         Cursor.visible = true;
@@ -58,6 +61,7 @@ public class Dialog : MonoBehaviour
             cutsceneStand.SetActive(true);
             print("Start Game");
             textDisplay.text = "";
+            movementJS.SetActive(true);
         }
     }
 }

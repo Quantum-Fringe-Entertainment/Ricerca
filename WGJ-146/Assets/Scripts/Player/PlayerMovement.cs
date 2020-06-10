@@ -16,6 +16,11 @@ public class PlayerMovement : MonoBehaviour
     public AudioSource walkSource;
     public float playSpeed = 1.6f;
 
+    [Space]
+    [Header("Mobile Joystick Settings")]
+    public VariableJoystick cameraJS;
+    public VariableJoystick movementJS;
+
     [HideInInspector] private CharacterController _charController;
     [HideInInspector] private PlayerState playerState;
     private Vector3 moveDirection = Vector3.zero;
@@ -37,10 +42,14 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-         x = Input.GetAxis(Axis.Horizontal);
-         z = Input.GetAxis(Axis.Vertical);
+         //x = Input.GetAxis(Axis.Horizontal);
+         //z = Input.GetAxis(Axis.Vertical);
 
+        x = movementJS.Horizontal;
+        z = movementJS.Vertical;
 
+        //mainPlayerCamera.m_XAxis.Value = cameraJS.Horizontal;
+        //mainPlayerCamera.m_YAxis.Value = cameraJS.Vertical;
 
         GetPlayerDirection();
         JumpAndGravity();

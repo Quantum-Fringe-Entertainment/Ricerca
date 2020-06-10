@@ -27,6 +27,11 @@ public class PlayerState : MonoBehaviour
     public Transform stumbleCheckPoint;
     public float stumbleRayLength = 2f;
 
+    [Space]
+    [Header("Mobile Joystick Settings")]
+    public VariableJoystick cameraJS;
+    public VariableJoystick movementJS;
+
     [HideInInspector] public bool enablePlayerInput = true;
 
     private Animator m_playerAnim;
@@ -102,8 +107,12 @@ public class PlayerState : MonoBehaviour
     private void Update()
     {
 
-        x = Input.GetAxis(Axis.Horizontal);
-        z = Input.GetAxis(Axis.Vertical);
+        //x = Input.GetAxis(Axis.Horizontal);
+        //z = Input.GetAxis(Axis.Vertical);
+
+        x = movementJS.Horizontal;
+        z = movementJS.Vertical;
+
 
         CheckPlayerStatus();
         SetPlayerAnimations();
