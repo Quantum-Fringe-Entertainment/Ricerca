@@ -42,3 +42,5 @@ Some advances techniques implemented in game for the bear chase sequence are ins
 - While walking or climbing on ledge rocks fall upon the player
 - While sliding through the slope,ice spikes fall upon the player inside the cave
 
+#### Nore:
+To get the lates project files got [PV7](https://github.com/Quantum-Fringe-Entertainment/Ricerca/tree/PV7) branch
