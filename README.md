@@ -1,6 +1,8 @@
 # Ricerca
 The story of a father's pursuit for his lost child.
 
+Want to play the game? Click [Rierce on Itch.io](https://pikachuxxx.itch.io/ricerca) or scroll down below to get the source file branch details and release updates.
+
 #### Story :
 Living in the parts of actic region, Abel and kira have moved on for exploring the beauties of the world, unfortunately his daughter Kira went missing as abel woke, he was dazzled and all he could think was about the well being of his baby girl. He goes on a risky and breath-taking journey to find his daughter. He travels through dangerous places, risking his life to find his daughter. The rest of the story revolves around the challenges he must overcome to find his daughter.
 
@@ -43,4 +45,5 @@ Some advances techniques implemented in game for the bear chase sequence are ins
 - While sliding through the slope,ice spikes fall upon the player inside the cave
 
 #### Note:
-To get the lates project files got [PV7](https://github.com/Quantum-Fringe-Entertainment/Ricerca/tree/PV7) branch
+- Check out the [Releases](https://github.com/Quantum-Fringe-Entertainment/Ricerca/releases) section to get the latest executables
+- To get the latest project source files goto [PV7](https://github.com/Quantum-Fringe-Entertainment/Ricerca/tree/PV7) [PC Builds] branch and [Mobile1](https://github.com/Quantum-Fringe-Entertainment/Ricerca/tree/Mobile1) [Mobile(iOS) Build with joystick and other changes] branch.
