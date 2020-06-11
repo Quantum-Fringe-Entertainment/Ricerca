@@ -40,10 +40,10 @@ Some advances techniques implemented in game for the bear chase sequence are ins
 - Climbing up gill while dodging mini Avalanches
 - Going through narrow passages
 - Getting chased by wild animals
-- ~~And walking left/right on ledges on the mountain
-- ~~Mountain climbing on ledges as in uncharted and GOW
-- ~~While walking or climbing on ledge rocks fall upon the player
-- ~~While sliding through the slope,ice spikes fall upon the player inside the cave
+- ~~And walking left/right on ledges on the mountain~~
+- ~~Mountain climbing on ledges as in uncharted and GOW~~
+- ~~While walking or climbing on ledge rocks fall upon the player~~
+- ~~While sliding through the slope,ice spikes fall upon the player inside the cave~~
 
 #### Note:
 - Check out the [Releases](https://github.com/Quantum-Fringe-Entertainment/Ricerca/releases) section to get the latest executables
