@@ -1,7 +1,7 @@
 # Ricerca
 The story of a father's pursuit for his lost child.
 
-Want to play the game? Click [Rierca on Itch.io](https://pikachuxxx.itch.io/ricerca) or scroll down to end of the page to get the source file branch details and release updates.
+Want to play the game? Click [Rierca on Itch.io](https://pikachuxxx.itch.io/ricerca) or scroll down to end of the page to get the source file branch details and [release](https://github.com/Quantum-Fringe-Entertainment/Ricerca/releases) updates.
 
 #### Story :
 Living in the parts of actic region, Abel and kira have moved on for exploring the beauties of the world, unfortunately his daughter Kira went missing as abel woke, he was dazzled and all he could think was about the well being of his baby girl. He goes on a risky and breath-taking journey to find his daughter. He travels through dangerous places, risking his life to find his daughter. The rest of the story revolves around the challenges he must overcome to find his daughter.
