@@ -34,7 +34,7 @@ Some advanced tips and tricks for more seasoned timeline/cinemachine users.
 
 Some advances techniques implemented in game for the bear chase sequence are inspired by [GDC talks about Uncharted4 NPC chasing](https://www.youtube.com/watch?v=G8W7EQKBgcg) 
 
-#### [References and learning Resources](https://github.com/Quantum-Fringe-Entertainment/Ricerca/wiki/References)
+#### [More References and Learning Resources](https://github.com/Quantum-Fringe-Entertainment/Ricerca/wiki/References)
 
 ##### Gameplay features : 
 - Climbing up gill while dodging mini Avalanches
