@@ -36,15 +36,6 @@ Some advances techniques implemented in game for the bear chase sequence are ins
 
 #### [More References and Learning Resources](https://github.com/Quantum-Fringe-Entertainment/Ricerca/wiki/References)
 
-##### Gameplay features : 
-- Climbing up gill while dodging mini Avalanches
-- Going through narrow passages
-- Getting chased by wild animals
-- ~~And walking left/right on ledges on the mountain~~
-- ~~Mountain climbing on ledges as in uncharted and GOW~~
-- ~~While walking or climbing on ledge rocks fall upon the player~~
-- ~~While sliding through the slope,ice spikes fall upon the player inside the cave~~
-
 ### Source File branches and Latest releases:
 - Check out the [Releases](https://github.com/Quantum-Fringe-Entertainment/Ricerca/releases) section to get the latest executables
 - To get the latest project source files goto [PV7](https://github.com/Quantum-Fringe-Entertainment/Ricerca/tree/PV7) [PC Builds] branch and [Mobile1](https://github.com/Quantum-Fringe-Entertainment/Ricerca/tree/Mobile1) [Mobile(iOS) Build with joystick and other changes] branch.
